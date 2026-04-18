@@ -367,9 +367,10 @@
     "home": "Home",
     "crumbCurrent": "Brand",
     "eyebrow": "Brand Story",
-    "titleLine1": "Clinical herbal care,",
-    "titleEm": "formulas",
-    "titleLine2": " powered by a smart platform",
+    "titleLine1": "Clinical Herbal Care,",
+    "titleEm": "Formulas",
+    "titleLine2": " Powered by a ",
+    "titleEm2": "Smart Platform",
     "sub": "Technology and intelligent services to help TCM clinics deliver granule-based care efficiently, safely, and smartly."
   },
   "BrandOverview": {
@@ -492,9 +493,9 @@
     "home": "Home",
     "crumbCurrent": "Innovation",
     "eyebrow": "Product Innovation",
-    "titleLine1": "Innovation that ",
-    "titleEm": "modernizes",
-    "titleLine2": " herbal medicine with science",
+    "titleLine1": "Innovation That ",
+    "titleEm": "Modernizes",
+    "titleLine2": " Herbal Medicine with Science",
     "sub": "From technology to production, every step is grounded in evidence and engineering."
   },
   "TechInnovation": {
@@ -634,9 +635,9 @@
     "home": "Home",
     "crumbCurrent": "Quality",
     "eyebrow": "Quality assurance",
-    "titleLine1": "National programs,",
-    "titleEm": "research-led",
-    "titleLine2": "modernization of herbal medicine",
+    "titleLine1": "National Programs,",
+    "titleEm": "Research-Led",
+    "titleLine2": " Modernization of Herbal Medicine",
     "sub": "Science-driven standardization and strict controls for safer use—every bottle follows rigorous QA."
   },
   "QualitySystem": {

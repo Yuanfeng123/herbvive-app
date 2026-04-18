@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { getTranslations } from 'next-intl/server'
+import WeChatQR from '@/components/WeChatQR'
 
 const rowIcons: Record<string, ReactNode> = {
   address: (
@@ -28,6 +29,7 @@ const rowIcons: Record<string, ReactNode> = {
 
 export default async function ContactCard() {
   const t = await getTranslations('ContactCard')
+  const tFooter = await getTranslations('Footer')
   const rows = t.raw('rows') as { key: string; label: string; value: string; href?: string }[]
 
   return (
@@ -43,7 +45,12 @@ export default async function ContactCard() {
             <p className="text-[14px] text-ink-soft font-light leading-[1.7]">
               {t('body')}
             </p>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6">
+              <WeChatQR
+                size={100}
+                className="rounded-xl ring-1 ring-border flex-shrink-0"
+                alt={tFooter('wechatQrAlt')}
+              />
               <a
                 href="mailto:info@herbvive.co"
                 className="inline-flex items-center gap-2 bg-sage text-white text-[13px] font-medium px-[22px] py-3 rounded-full no-underline transition-colors duration-200 hover:bg-sage-light"
