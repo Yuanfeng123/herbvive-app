@@ -1,0 +1,789 @@
+{
+  "Navbar": {
+    "links": {
+      "home": "首页",
+      "brand": "品牌介绍",
+      "quality": "质量保证",
+      "innovation": "产品创新",
+      "contact": "联系我们"
+    },
+    "login": "登录",
+    "register": "注册",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "toggleLanguage": "切换语言",
+    "toggleZhLabel": "中",
+    "toggleEnLabel": "EN"
+  },
+  "Hero": {
+    "badge": "Professional TCM · 专业草本",
+    "titleTop": "面向中医从业者的",
+    "titleHighlight": "专业草本解决方案",
+    "subtitle": "成品商城 · 配方定制 · 当日·次日达 · 全美覆盖",
+    "statProducts": "成品产品",
+    "statHerbs": "草本品种",
+    "statProcessing": "加工费",
+    "statNationwide": "全美",
+    "statDelivery": "配送",
+    "cta": "立即注册体验",
+    "trustNote": "仅限持有执照的中医从业者注册 · 免费开通"
+  },
+  "Contact": {
+    "breadcrumb": "首页",
+    "page": "联系我们",
+    "badge": "Contact · 联系我们",
+    "heroTitle1": "随时联系",
+    "heroTitleEm": "我们的团队",
+    "heroSub": "无论您有任何问题、合作意向或产品咨询，我们的团队随时准备为您提供专业支持。",
+    "addressLabel": "地址",
+    "addressVal": "1178 N Grove St Unit C\nAnaheim, CA 92806",
+    "emailLabel": "邮箱",
+    "phoneLabel": "电话",
+    "hoursLabel": "营业时间",
+    "hoursVal": "周一至周五  9:00 – 18:00 PST",
+    "wechatCardTitle": "微信咨询",
+    "wechatCardBody": "扫码添加销售经理，领取样品和报价单",
+    "formTitle": "发送消息",
+    "formSub": "我们通常在 1 个工作日内回复。",
+    "fname": "姓名",
+    "fnamePh": "您的姓名",
+    "femail": "邮箱地址",
+    "femailPh": "your@email.com",
+    "fphone": "联系电话（选填）",
+    "fphonePh": "657-000-0000",
+    "fclinic": "诊所 / 机构名称（选填）",
+    "fclinicPh": "诊所名称",
+    "ftype": "咨询类型",
+    "fmsg": "留言内容",
+    "fmsgPh": "请描述您的需求或问题…",
+    "fsend": "发送消息",
+    "fsending": "发送中…",
+    "successTitle": "消息已发送！",
+    "successSub": "我们将尽快与您联系。",
+    "sendAnother": "再发一条",
+    "errorSend": "发送失败，请稍后再试或发邮件至 info@herbvive.co",
+    "mapEyebrow": "Location · 位置",
+    "mapTitle": "我们的位置",
+    "mapSub": "位于加州阿纳海姆市，服务全美执业医师。",
+    "mapBtn": "在 Google Maps 中打开",
+    "faqTitle": "常见问题",
+    "ftypes": [
+      "成品商城",
+      "配方定制",
+      "合作洽谈",
+      "质量问题",
+      "其他"
+    ],
+    "faqs": [
+      {
+        "q": "如何注册成为会员医师？",
+        "a": "提交执业执照信息后，我们将在 1 个工作日内审核并开通您的专属账户。"
+      },
+      {
+        "q": "配方定制有最低起订量吗？",
+        "a": "没有。每个配方均无最低起订量，按实际用量灵活下单，零加工费。"
+      },
+      {
+        "q": "配送范围覆盖哪些地区？",
+        "a": "我们提供全美配送服务，覆盖 50 个州，当日或次日达（视地区）。"
+      },
+      {
+        "q": "产品是否通过 GMP 认证？",
+        "a": "是的。所有产品均来自 GMP 认证工厂，依托康仁堂药业完整质控体系。"
+      }
+    ]
+  },
+  "ContactEmail": {
+    "empty": "未填写",
+    "teamSubject": "📋 新询盘：{inquiry} · {name}",
+    "userSubject": "感谢您的询盘，我们已收到！· HERBVIVE",
+    "team": {
+      "htmlLang": "zh",
+      "docTitle": "新询盘通知 · HERBVIVE",
+      "headerTagline": "美国康仁堂 · 询盘通知",
+      "banner": "🔔 &nbsp;您收到一条新的客户询盘",
+      "inquiryTypePrefix": "咨询类型：",
+      "sectionCustomer": "客户信息",
+      "labelName": "姓名",
+      "labelEmail": "邮箱",
+      "labelPhone": "电话",
+      "labelClinic": "诊所 / 机构",
+      "labelSubmittedAt": "收到时间",
+      "sectionMessage": "留言内容",
+      "btnReply": "回复客户邮件",
+      "btnCall": "拨打电话",
+      "replyMailSubject": "Re: HERBVIVE 询盘回复",
+      "footerLine1": "此邮件由 <strong>herbvive.co</strong> 联系表单自动发送 · 请勿直接回复此邮件",
+      "footerLine2": "HERBVIVE · 美国康仁堂 · 1178 N Grove St Unit C, Anaheim CA 92806"
+    },
+    "user": {
+      "htmlLang": "zh",
+      "docTitle": "感谢您的询盘 · HERBVIVE",
+      "headerSubtitle": "美国康仁堂 · American Kanrentang",
+      "heroTitlePrefix": "感谢您的询盘，",
+      "heroTitleSuffix": "！",
+      "heroSubHtml": "我们已收到您的消息，团队将在 <strong style=\"color:#ffffff;\">1 个工作日内</strong>与您联系。",
+      "greetingBeforeName": "您好，",
+      "greetingAfterName": "，",
+      "greetingSecond": "感谢您通过 HERBVIVE 官网提交询盘。以下是您的提交摘要，请确认信息无误。",
+      "summaryTitle": "提交摘要",
+      "labelName": "姓名",
+      "labelEmail": "邮箱",
+      "labelInquiryType": "咨询类型",
+      "labelMessage": "留言",
+      "whatsNextTitle": "接下来会发生什么？",
+      "step1Title": "团队审阅您的询盘",
+      "step1Desc": "我们的专业顾问将在 1 个工作日内处理您的请求。",
+      "step2Title": "联系您进行沟通",
+      "step2Desc": "我们将通过邮件或电话与您确认具体需求，提供专属解决方案。",
+      "urgentIntro": "如需紧急咨询，欢迎直接联系我们：",
+      "labelEmailBox": "📧 邮箱",
+      "labelPhoneBox": "📞 电话",
+      "ctaWebsite": "访问 HERBVIVE 官网 →",
+      "disclaimer": "* 本平台所涉及产品及服务不用于诊断、治疗、治愈或预防任何疾病，也不替代专业医疗建议。所有服务旨在支持有执照的执业医师。",
+      "footerCopyright": "© 2025 HERBVIVE · 美国康仁堂. All rights reserved."
+    }
+  },
+  "Layout": {
+    "title": "HERBVIVE · 美国康仁堂",
+    "description": "面向中医从业者的专业草本解决方案"
+  },
+  "BrandPage": {
+    "title": "品牌介绍 · HERBVIVE 美国康仁堂",
+    "description": "以科技创新和智能服务，助力中医诊所高效、安全、智能地开展中药配方颗粒临床应用。"
+  },
+  "QualityPage": {
+    "title": "质量保证 · HERBVIVE 美国康仁堂",
+    "description": "以科技创新推动中药标准化，以严格质控保障用药安全。"
+  },
+  "InnovationPage": {
+    "title": "产品创新 · HERBVIVE 美国康仁堂",
+    "description": "以创新驱动产品升级，推动中药产业高质量发展。"
+  },
+  "Footer": {
+    "taglineLine1": "美国康仁堂",
+    "taglineLine2": "面向中医从业者的专业草本解决方案",
+    "wechatOfficial": "官方微信",
+    "productServicesTitle": "产品服务",
+    "aboutTitle": "关于我们",
+    "copyright": "© 2025 HERBVIVE · 美国康仁堂. All rights reserved.",
+    "taglineEn": "Professional TCM Solutions for Licensed Practitioners",
+    "wechatQrAlt": "HERBVIVE 官方微信二维码",
+    "productLinks": [
+      {
+        "href": "#",
+        "label": "成品商城"
+      },
+      {
+        "href": "#",
+        "label": "配方定制平台"
+      },
+      {
+        "href": "#",
+        "label": "产品目录"
+      },
+      {
+        "href": "#",
+        "label": "质量标准"
+      }
+    ],
+    "aboutLinks": [
+      {
+        "href": "#",
+        "label": "公司介绍"
+      },
+      {
+        "href": "#",
+        "label": "医师认证"
+      },
+      {
+        "href": "#",
+        "label": "联系方式"
+      },
+      {
+        "href": "#",
+        "label": "隐私政策"
+      }
+    ]
+  },
+  "Disclaimer": {
+    "body": "†本声明未经美国食品药品监督管理局（FDA）评估。本平台所涉及产品无意用于诊断、治疗、治愈或预防任何疾病。www.herbvive.co 网站上的信息仅供参考，不能替代专业医疗建议。Herbvive 保留所有内容的版权。未经许可及明确标注 Herbvive 来源，禁止全部或部分转载。"
+  },
+  "TickerBar": {
+    "stockMobile": "库存",
+    "stockDesktop": "LIVE · 库存状态",
+    "inStock": "现货",
+    "items": [
+      {
+        "name": "黄芪 Astragalus",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "白术 Atractylodes",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "当归 Angelica",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "人参 Ginseng",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "枸杞 Goji Berry",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "丹参 Salvia",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "茯苓 Poria",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "甘草 Licorice",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "川芎 Ligusticum",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "五味子 Schisandra",
+        "tag": "✓ GMP"
+      }
+    ]
+  },
+  "Products": {
+    "eyebrow": "Ready-Made · 成品产品",
+    "title": "精选成品产品",
+    "body": "严选高端草本配方，标准化生产工艺，每一瓶均经过严格质量检测。标签清晰、成分透明，适合直接为患者推荐使用。",
+    "ctaShop": "进入商城",
+    "ctaCatalog": "查看产品目录",
+    "stat1Label": "诊所精选 · 常备品类",
+    "stat2Label": "认证生产",
+    "imageAlt": "HERBVIVE 产品瓶装展示"
+  },
+  "Formula": {
+    "eyebrow": "Custom Formula · 配方定制",
+    "titleLine1": "个性化配方",
+    "titleLine2": "定制平台",
+    "fee0a": "0加工费",
+    "fee0b": "0包装费",
+    "fee0c": "0额外费用",
+    "body": "根据患者需求灵活定制草本配方，流程简单，价格透明，无隐藏费用。",
+    "cta": "开始定制",
+    "mockTitle": "🌿 新建配方 — 患者 #2047",
+    "addHerb": "+ 添加草药",
+    "dash": "—",
+    "shippingLabel": "配送方式",
+    "shippingBadge": "次日达",
+    "processingLabel": "加工费用",
+    "submit": "提交配方 →",
+    "features": [
+      {
+        "title": "自由组合配方",
+        "desc": "支持多味草本自由搭配"
+      },
+      {
+        "title": "灵活配送",
+        "desc": "可寄诊所或直寄患者"
+      },
+      {
+        "title": "当日/次日调配",
+        "desc": "快速响应，高效履单"
+      },
+      {
+        "title": "在线管理",
+        "desc": "订单与配方一站式管理"
+      }
+    ],
+    "herbs": [
+      {
+        "name": "黄芪 Astragalus",
+        "amount": "15g"
+      },
+      {
+        "name": "白术 Atractylodes",
+        "amount": "12g"
+      },
+      {
+        "name": "茯苓 Poria",
+        "amount": "10g"
+      }
+    ]
+  },
+  "HomeVideos": {
+    "eyebrow": "Product Demo · 功能演示",
+    "heading": "平台核心功能视频",
+    "items": [
+      {
+        "title": "智能配方系统",
+        "subtitle": "快速搜索颗粒，自动计算浓缩比与价格",
+        "src": "/智能配方系统-快速搜索颗粒，自动计算浓缩比与价格.mp4"
+      },
+      {
+        "title": "协定方一键下单",
+        "subtitle": "常用方直接下单，无需重复操作，高效便捷",
+        "src": "/协定方一键下单-常用方直接下单，无需重复操作，高效便捷.mp4"
+      },
+      {
+        "title": "单位颗粒灵活分装",
+        "subtitle": "满足您的个性化需求",
+        "src": "/单位颗粒灵活分装-满足您的个性化需求.mp4"
+      }
+    ]
+  },
+  "Process": {
+    "eyebrow": "How It Works · 服务流程",
+    "heading": "简单四步，完成定制",
+    "steps": [
+      {
+        "num": "01",
+        "title": "注册 · 从业者身份",
+        "desc": "提交资质信息，完成从业者身份核验，开通专属账户。"
+      },
+      {
+        "num": "02",
+        "title": "选品 · 配方",
+        "desc": "浏览成品商城，或在线系统自由组合个性化草本配方。"
+      },
+      {
+        "num": "03",
+        "title": "调配 · 质检",
+        "desc": "专业团队当日调配，严格质量把控，确保每单精准出品。"
+      },
+      {
+        "num": "04",
+        "title": "当日 · 次日",
+        "desc": "当日或次日发出，可寄送至诊所或患者地址，全美覆盖。"
+      }
+    ],
+    "stats": [
+      {
+        "val": "24h",
+        "label": "平均配送时效"
+      },
+      {
+        "val": "500+",
+        "label": "草本原料品种"
+      },
+      {
+        "val": "$0",
+        "label": "定制加工费用"
+      }
+    ]
+  },
+  "CTA": {
+    "eyebrow": "Get Started · 立即开始",
+    "titleLine1": "立即开始使用",
+    "titleEm": "HERBVIVE",
+    "sub": "服务全美执业医师 · 高效、专业、稳定",
+    "ctaShop": "进入商城",
+    "ctaCustom": "开始定制",
+    "wechatNote": "官方微信 · 扫码咨询合作"
+  },
+  "BrandHero": {
+    "home": "首页",
+    "crumbCurrent": "品牌介绍",
+    "eyebrow": "Brand Story · 品牌故事",
+    "titleLine1": "服务中医临床的",
+    "titleEm": "草本配方",
+    "titleLine2": "智能平台",
+    "sub": "以科技创新和智能服务，助力中医诊所高效、安全、智能地开展中药配方颗粒临床应用。"
+  },
+  "BrandOverview": {
+    "imageAlt": "HERBVIVE 公司展示",
+    "eyebrow": "About Us · 关于我们",
+    "heading": "康仁堂药业",
+    "p1": "康仁堂药业，依托国家级科研体系，推动中药标准化与现代化。",
+    "p2": "康仁堂（康仁堂药业）专注中药配方颗粒研发与生产20余年，是国内最早的配方颗粒试点企业之一，致力于中药标准化、智能化发展。",
+    "p3": "公司拥有多项核心技术与知识产权，建立了完善的质量控制体系及现代化生产体系，推动中药由传统煎煮向标准化制剂转型。",
+    "ctaContact": "联系我们",
+    "ctaQuality": "了解质量保证"
+  },
+  "StatsRow": {
+    "stats": [
+      {
+        "num": "20",
+        "unit": "+",
+        "label": "年行业经验"
+      },
+      {
+        "num": "160",
+        "unit": "+",
+        "label": "专利技术"
+      },
+      {
+        "num": "80",
+        "unit": "+",
+        "label": "国家级荣誉"
+      },
+      {
+        "num": "20",
+        "unit": "+",
+        "label": "覆盖全球国家地区"
+      }
+    ]
+  },
+  "Partnership": {
+    "eyebrow": "Our Partners · 核心优势",
+    "heading": "三大核心价值",
+    "sub": "汇聚顶级中药资源，以技术与服务为执业医师赋能。",
+    "cards": [
+      {
+        "title": "高质量保障",
+        "desc": "依托康仁堂科研实力，代际国家实验室空间产格品质管控体系，确保每一件产品的安全与有效。GMP 认证生产，全程溯源。"
+      },
+      {
+        "title": "Herbvive康仁堂",
+        "desc": "康仁堂智能系统智能化下单、自动配药、物流追踪，助力诊所高效运营。当日调配，次日到达，全流程线上管理。"
+      },
+      {
+        "title": "合作共赢",
+        "desc": "提升诊所收益与效率，多种合作模式，赋能中医诊所。携手共创行业新生态，支持执业医师长期稳定发展。"
+      }
+    ]
+  },
+  "CooperationModes": {
+    "eyebrow": "Cooperation · 合作模式",
+    "heading": "灵活多元的合作方式",
+    "modes": [
+      {
+        "num": "01",
+        "title": "批量采购 · 成品订购",
+        "desc": "适合诊所、药房等大批量采购需求。灵活订购方式，支持多种采购方案，满足不同规模客户。",
+        "tag": "Ready-Made"
+      },
+      {
+        "num": "02",
+        "title": "处方上传 · 个性化定制",
+        "desc": "支持医生处方上传，满足个性化配方需求。一对一的序服务，保障每一份处方的专属定制。",
+        "tag": "Custom Formula"
+      },
+      {
+        "num": "03",
+        "title": "高效物流 · 准时直达",
+        "desc": "高效物流保障药品品质，覆盖全美主要城市，配送时效有保障，可寄至诊所或患者。",
+        "tag": "Nationwide"
+      }
+    ]
+  },
+  "ContactCard": {
+    "titleLine1": "获取免费样品",
+    "titleLine2": "扫码添加销售经理微信",
+    "body": "了解更多合作模式与产品详情",
+    "emailCta": "发送邮件咨询",
+    "rows": [
+      {
+        "key": "address",
+        "label": "地址",
+        "value": "1178 N Grove St Unit C, Anaheim CA 92806"
+      },
+      {
+        "key": "email",
+        "label": "邮箱",
+        "value": "info@herbvive.co",
+        "href": "mailto:info@herbvive.co"
+      },
+      {
+        "key": "phone",
+        "label": "电话",
+        "value": "657-781-0476",
+        "href": "tel:6577810476"
+      },
+      {
+        "key": "web",
+        "label": "官网",
+        "value": "www.herbvive.co",
+        "href": "https://www.herbvive.co"
+      }
+    ]
+  },
+  "BrandCTA": {
+    "eyebrow": "Get Started · 立即开始",
+    "titleLine1": "开启专业草本服务",
+    "titleEm": "HERBVIVE",
+    "sub": "服务全美执业医师 · 高效、专业、稳定",
+    "ctaShop": "进入商城",
+    "ctaCustom": "开始定制"
+  },
+  "InnovationHero": {
+    "home": "首页",
+    "crumbCurrent": "产品创新",
+    "eyebrow": "Product Innovation · 产品创新",
+    "titleLine1": "产品创新——",
+    "titleEm": "科技引领",
+    "titleLine2": "中药现代化",
+    "sub": "以创新驱动产品升级，推动中药产业高质量发展。从技术到生产，每一个环节都以科学为依据。"
+  },
+  "TechInnovation": {
+    "eyebrow": "Technology · 技术创新",
+    "heading": "「全成分」提取技术",
+    "headingBreak": "行业首创",
+    "coreTitle": "核心专利技术",
+    "coreBody": "将传统汤剂中的全部成分转移到中药配方颗粒当中。区别于市场上的单味颗粒仅提取部分成分，我们采用「全成分」提取技术，成分转移率达 98% 以上，最大限度保留有效成分，确保临床疗效。",
+    "quoteTitle": "「单煎=共煎一致」",
+    "quoteBody": "通过全成分提取与标准化工艺，使单味颗粒组合后接近传统汤剂的整体成分结构，从而提升临床应用的一致性与稳定性。",
+    "linkQuality": "质量体系",
+    "linkMore": "了解更多",
+    "chartCaption": "全成分转移率对比 · Component Transfer Analysis",
+    "barDecoction": "传统汤剂（基准）",
+    "barHerbvive": "全成分配方颗粒（HERBVIVE）",
+    "barMarket": "普通单味颗粒（市场同类）",
+    "spectraCaption": "红外指纹图谱对比 — 成分吸收峰一致性验证",
+    "transferAria": "转移率 {pct}"
+  },
+  "CompareTable": {
+    "eyebrow": "Comparison · 技术对比",
+    "heading": "康仁堂工艺优势对比",
+    "sub": "从制备方式到临床应用，全方位对比两种主流制剂形式的优劣。",
+    "colLabel": "对比项目",
+    "colA": "干法制粒（康仁堂）",
+    "colB": "湿法制粒（多数厂商）",
+    "rows": [
+      {
+        "label": "制粒方式",
+        "a": "直接将提取干粉在压力作用下压缩成颗粒，无需加黏合剂或辅料",
+        "b": "需要加入淀粉、糊精、蔗糖等黏合剂形成「湿软块」，再干燥成颗粒"
+      },
+      {
+        "label": "辅料使用",
+        "a": "98%品种无辅料（西梅，枸杞等难成型的添加极少量辅料），不添加糖、淀粉等物质",
+        "b": "含辅料，通常添加5–20%不等的糖或淀粉"
+      },
+      {
+        "label": "活性成分保留",
+        "a": "活性成分完整保留，无因高温干燥或辅料反应而损失",
+        "b": "高温干燥易破坏部分热敏成分，辅料可能影响溶出率"
+      },
+      {
+        "label": "颗粒稳定性",
+        "a": "纯度高、吸湿性低、溶出快",
+        "b": "含糖淀粉易吸潮、易结块，溶出较慢"
+      },
+      {
+        "label": "口感与颜色",
+        "a": "味道接近传统煎煮汤剂，颜色自然深",
+        "b": "味道偏甜、颜色偏浅"
+      },
+      {
+        "label": "适用人群",
+        "a": "糖尿病、低糖饮食者可安全使用",
+        "b": "不适合糖尿病或需控糖人群"
+      }
+    ]
+  },
+  "Production": {
+    "eyebrow": "Manufacturing · 生产创新",
+    "headingLine1": "数字化自动",
+    "headingLine2": "生产体系",
+    "sub": "中药炮制工艺参数化、自动化控制，实现中药生产数字化、智能化、规模化。",
+    "equipmentCaption": "现代化设备展示",
+    "processSteps": [
+      {
+        "title": "原料精选与炮制",
+        "desc": "严选道地药材，按古法炮制规范进行前处理，保留最大化的活性成分。"
+      },
+      {
+        "title": "提取与浓缩",
+        "desc": "全成分提取技术，水提醇沉工艺精准控温，确保有效成分充分转移，保留率达 98%+。"
+      },
+      {
+        "title": "干燥制粒成型",
+        "desc": "先进的喷雾干燥与流化床制粒技术，无辅料或极少辅料，成品颗粒均匀细腻，溶解性优异。"
+      },
+      {
+        "title": "全检出库",
+        "desc": "每批成品进行红外指纹图谱全检、含量测定，出具完整质量报告，合格后方可出库配送。"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "提取浓缩罐",
+        "sub": "GMP 级不锈钢"
+      },
+      {
+        "name": "球磨过滤机",
+        "sub": "精密过滤系统"
+      },
+      {
+        "name": "出盒包装系统",
+        "sub": "自动化包装线"
+      },
+      {
+        "name": "立盒储运系统",
+        "sub": "本地仓储管理"
+      }
+    ]
+  },
+  "ClinicalData": {
+    "eyebrow": "Clinical Evidence · 产品验证",
+    "statNumber": "122",
+    "statUnit": "项",
+    "statLabel": "临床观察",
+    "statSub": "覆盖 20,000+ 病例，多中心、多病种系统性临床研究",
+    "cards": [
+      {
+        "num": "500",
+        "sup": "+",
+        "desc": "草本原料品种，全面覆盖临床常用配方，满足多种治疗需求"
+      },
+      {
+        "num": "98",
+        "sup": "%+",
+        "desc": "全成分转移率，远超市场同类产品，最大程度保留临床有效成分"
+      },
+      {
+        "num": "$0",
+        "sup": "",
+        "desc": "定制加工费，配方颗粒按原料成本计费，无额外加工及包装费用"
+      }
+    ]
+  },
+  "InnovationCTA": {
+    "eyebrow": "Get Started · 立即开始",
+    "titleLine1": "以创新技术",
+    "titleLine2": "提升",
+    "titleEm": "临床疗效",
+    "sub": "服务全美执业医师 · 高效、专业、稳定",
+    "ctaShop": "进入商城",
+    "ctaCustom": "开始定制"
+  },
+  "QualityHero": {
+    "home": "首页",
+    "crumbCurrent": "质量保证",
+    "eyebrow": "Quality Assurance · 质量体系",
+    "titleLine1": "国家项目支持",
+    "titleEm": "科研引领",
+    "titleLine2": "中药现代化",
+    "sub": "以科技创新推动中药标准化，以严格质控保障用药安全。每一瓶产品都经过严格的质量管控流程。"
+  },
+  "QualitySystem": {
+    "eyebrow": "Quality System · 科研与检测体系",
+    "headingLine1": "三重核心",
+    "headingLine2": "质量保障",
+    "sub": "从原料采购到成品出库，每一个环节均有严格的科学标准把控，确保产品的安全性与有效性。",
+    "ctaInnovation": "了解产品创新",
+    "certHeading": "认证资质 · Certifications",
+    "cards": [
+      {
+        "title": "专利技术",
+        "desc": "拥有多项中药配方颗粒制备工艺专利，从提取浓缩到干燥成型，全程工艺优化，保障有效成分最大保留。"
+      },
+      {
+        "title": "红外指纹图谱数据库",
+        "desc": "建立包含 500+ 品种的中药红外指纹图谱数据库，实现快速精准的原料鉴别与成品检测，杜绝掺假。"
+      },
+      {
+        "title": "标准化检测设备",
+        "desc": "配备先进的现代化检测仪器，包括 HPLC、GC-MS 等国际标准设备，确保每批产品的一致性与稳定性。"
+      }
+    ],
+    "badges": [
+      {
+        "label": "GMP 认证",
+        "sub": "国际标准生产规范"
+      },
+      {
+        "label": "FDA 备案",
+        "sub": "美国食品药品监管"
+      },
+      {
+        "label": "国家级科研项目",
+        "sub": "政府级质量背书"
+      },
+      {
+        "label": "ISO 质量管理",
+        "sub": "国际质量管理体系"
+      },
+      {
+        "label": "A股上市品质",
+        "sub": "康仁堂 · 300026"
+      },
+      {
+        "label": "全程溯源",
+        "sub": "从产地到诊所"
+      }
+    ]
+  },
+  "Timeline": {
+    "eyebrow": "History · 国家项目背书",
+    "heading": "科研历程",
+    "sub": "自 2002 年起，持续投入建立中药配方颗粒现代工艺与质量标准体系，实现从传统炮制到现代制剂的转化。",
+    "items": [
+      {
+        "side": "left",
+        "year": "2002",
+        "event": "标准化工艺奠定基础",
+        "desc": "启动中药配方颗粒标准化研究，建立从原材料到成品的全流程质控体系，获得首批国家认证。"
+      },
+      {
+        "side": "right",
+        "year": "2008",
+        "event": "国家专项研究突破",
+        "desc": "承担多项国家级科研专项，攻克指纹图谱鉴别、有效成分定量等核心技术难题，建立行业标准。"
+      },
+      {
+        "side": "left",
+        "year": "2015",
+        "event": "引进外资，国际标准接轨",
+        "desc": "完成国际质量体系认证，产品标准与 FDA、GMP 国际规范全面接轨，开启北美市场布局。"
+      },
+      {
+        "side": "right",
+        "year": "至今",
+        "event": "持续创新，全球领先",
+        "desc": "持续更新检测技术与质控标准，成为中药配方颗粒市场占有率最高的民营企业，进军北美市场。"
+      }
+    ]
+  },
+  "Science": {
+    "eyebrow": "Science · 科技成果",
+    "heading": "科研能力展示",
+    "sub": "以前沿科技为依托，建立中药现代化研究与检测的完整体系。",
+    "cards": [
+      {
+        "title": "指纹图谱比对技术",
+        "desc": "应用红外光谱指纹图谱技术，对原料与成品进行精准鉴别，建立行业最大中药指纹图谱数据库，杜绝掺假混伪。"
+      },
+      {
+        "title": "有效成分定量分析",
+        "desc": "采用 HPLC 高效液相色谱法，对每批产品的有效成分进行精确定量，确保每批产品成分含量符合标准规格。"
+      },
+      {
+        "title": "批次稳定性管控",
+        "desc": "通过统计过程控制（SPC）对生产批次进行实时监测，确保每批产品品质高度一致，满足临床应用标准要求。"
+      }
+    ]
+  },
+  "OutputGuarantee": {
+    "eyebrow": "Output · 结果输出保证",
+    "heading": "三重输出保障",
+    "cards": [
+      {
+        "title": "标准品控",
+        "desc": "按规程检验与放行，批次一致、品质稳定，临床使用更可预期。"
+      },
+      {
+        "title": "在线商城系统",
+        "desc": "支持在线选购与实时库存查看，下单流程清晰便捷，发货与履约稳定高效。"
+      },
+      {
+        "title": "个人定制系统",
+        "desc": "支持医师个性化配方定制，系统自动核查配伍安全性，全程专业化管理保障患者用药安全。"
+      }
+    ]
+  },
+  "QualityCTA": {
+    "eyebrow": "Get Started · 立即开始",
+    "titleLine1": "以科研实力",
+    "titleLine2": "保障每一份",
+    "titleEm": "处方安全",
+    "sub": "服务全美执业医师 · 高效、专业、稳定",
+    "ctaShop": "进入商城",
+    "ctaInnovation": "产品创新"
+  }
+}

@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import RevealObserver from '@/components/RevealObserver'
@@ -9,9 +11,12 @@ import CooperationModes from '@/components/brand/CooperationModes'
 import ContactCard from '@/components/brand/ContactCard'
 import BrandCTA from '@/components/brand/BrandCTA'
 
-export const metadata = {
-  title: '品牌介绍 · HERBVIVE 美国康仁堂',
-  description: '以科技创新和智能服务，助力中医诊所高效、安全、智能地开展中药配方颗粒临床应用。',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('BrandPage')
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
 }
 
 export default function BrandPage() {

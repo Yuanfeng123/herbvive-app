@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { getTranslations } from 'next-intl/server'
 
 function ArrowIcon() {
   return (
@@ -8,7 +9,9 @@ function ArrowIcon() {
   )
 }
 
-export default function QualityCTA() {
+export default async function QualityCTA() {
+  const t = await getTranslations('QualityCTA')
+
   return (
     <section
       id="contact"
@@ -17,26 +20,29 @@ export default function QualityCTA() {
     >
       <div className="max-w-[1120px] mx-auto reveal">
         <p className="text-[11px] tracking-[0.12em] uppercase text-sage font-medium mb-3">
-          Get Started · 立即开始
+          {t('eyebrow')}
         </p>
         <h2 className="font-serif text-[clamp(34px,5vw,56px)] font-light text-ink mb-3 leading-[1.2]">
-          以科研实力<br />保障每一份<em className="not-italic text-sage">处方安全</em>
+          {t('titleLine1')}
+          <br />
+          {t('titleLine2')}
+          <em className="not-italic text-sage">{t('titleEm')}</em>
         </h2>
         <p className="text-[14px] sm:text-[15px] text-ink-soft font-light mb-8 sm:mb-10">
-          服务全美执业医师 · 高效、专业、稳定
+          {t('sub')}
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center flex-wrap max-w-md sm:max-w-none mx-auto">
           <Link
             href="/"
             className="inline-flex items-center justify-center gap-2 bg-sage text-white text-[14px] font-medium px-8 py-3.5 rounded-full no-underline transition-colors duration-200 hover:bg-sage-light"
           >
-            进入商城 <ArrowIcon />
+            {t('ctaShop')} <ArrowIcon />
           </Link>
           <Link
             href="/innovation"
             className="inline-flex items-center justify-center gap-2 bg-transparent text-sage text-[14px] font-medium px-8 py-3.5 rounded-full border-[1.5px] border-sage no-underline transition-all duration-200 hover:bg-sage hover:text-white"
           >
-            产品创新 <ArrowIcon />
+            {t('ctaInnovation')} <ArrowIcon />
           </Link>
         </div>
       </div>

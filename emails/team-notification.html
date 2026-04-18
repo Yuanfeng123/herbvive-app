@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="{{team_htmlLang}}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>新询盘通知 · HERBVIVE</title>
+  <title>{{team_docTitle}}</title>
   <!--[if mso]>
   <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
   <![endif]-->
@@ -27,7 +27,7 @@
                 HERBVIVE
               </p>
               <p style="font-size:11px; color:rgba(255,255,255,0.45); letter-spacing:0.12em; text-transform:uppercase; margin:6px 0 0;">
-                美国康仁堂 · 询盘通知
+                {{team_headerTagline}}
               </p>
             </td>
           </tr>
@@ -36,7 +36,7 @@
           <tr>
             <td style="background-color:#4a7c59; padding:14px 40px; text-align:center;">
               <p style="font-size:13px; font-weight:500; color:#ffffff; letter-spacing:0.04em; margin:0;">
-                🔔 &nbsp;您收到一条新的客户询盘
+                {{team_banner}}
               </p>
             </td>
           </tr>
@@ -50,7 +50,7 @@
                 <tr>
                   <td style="background-color:#e8f2ec; border:1px solid #d6e8db; border-radius:100px; padding:5px 14px;">
                     <p style="font-size:11px; font-weight:500; color:#4a7c59; letter-spacing:0.1em; text-transform:uppercase; margin:0;">
-                      咨询类型：{{inquiry_type}}
+                      {{team_inquiryTypePrefix}}{{inquiry_type}}
                     </p>
                   </td>
                 </tr>
@@ -58,7 +58,7 @@
 
               <!-- Section title -->
               <p style="font-family:Georgia,'Times New Roman',serif; font-size:22px; font-weight:300; color:#1a2420; margin:0 0 24px;">
-                客户信息
+                {{team_sectionCustomer}}
               </p>
 
               <!-- Info rows -->
@@ -66,7 +66,7 @@
 
                 <tr>
                   <td style="padding:12px 0; border-bottom:1px solid #f0f5f2; width:140px; vertical-align:top;">
-                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">姓名</p>
+                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">{{team_labelName}}</p>
                   </td>
                   <td style="padding:12px 0; border-bottom:1px solid #f0f5f2; vertical-align:top;">
                     <p style="font-size:14px; color:#1a2420; margin:0; font-weight:500;">{{name}}</p>
@@ -75,7 +75,7 @@
 
                 <tr>
                   <td style="padding:12px 0; border-bottom:1px solid #f0f5f2; vertical-align:top;">
-                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">邮箱</p>
+                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">{{team_labelEmail}}</p>
                   </td>
                   <td style="padding:12px 0; border-bottom:1px solid #f0f5f2; vertical-align:top;">
                     <a href="mailto:{{email}}" style="font-size:14px; color:#4a7c59; margin:0; text-decoration:none;">{{email}}</a>
@@ -84,7 +84,7 @@
 
                 <tr>
                   <td style="padding:12px 0; border-bottom:1px solid #f0f5f2; vertical-align:top;">
-                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">电话</p>
+                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">{{team_labelPhone}}</p>
                   </td>
                   <td style="padding:12px 0; border-bottom:1px solid #f0f5f2; vertical-align:top;">
                     <p style="font-size:14px; color:#1a2420; margin:0;">{{phone}}</p>
@@ -93,7 +93,7 @@
 
                 <tr>
                   <td style="padding:12px 0; border-bottom:1px solid #f0f5f2; vertical-align:top;">
-                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">诊所 / 机构</p>
+                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">{{team_labelClinic}}</p>
                   </td>
                   <td style="padding:12px 0; border-bottom:1px solid #f0f5f2; vertical-align:top;">
                     <p style="font-size:14px; color:#1a2420; margin:0;">{{clinic}}</p>
@@ -102,7 +102,7 @@
 
                 <tr>
                   <td style="padding:12px 0; vertical-align:top;">
-                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">收到时间</p>
+                    <p style="font-size:11px; font-weight:500; color:#3d5046; letter-spacing:0.06em; text-transform:uppercase; margin:0;">{{team_labelSubmittedAt}}</p>
                   </td>
                   <td style="padding:12px 0; vertical-align:top;">
                     <p style="font-size:14px; color:#1a2420; margin:0;">{{submitted_at}}</p>
@@ -113,7 +113,7 @@
 
               <!-- Message -->
               <p style="font-family:Georgia,'Times New Roman',serif; font-size:20px; font-weight:300; color:#1a2420; margin:36px 0 16px;">
-                留言内容
+                {{team_sectionMessage}}
               </p>
               <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                 <tr>
@@ -127,15 +127,15 @@
               <table cellpadding="0" cellspacing="0" role="presentation" style="margin-top:32px;">
                 <tr>
                   <td style="padding-right:12px;">
-                    <a href="mailto:{{email}}?subject=Re: HERBVIVE 询盘回复"
+                    <a href="mailto:{{email}}?subject={{team_replyMailSubjectEncoded}}"
                       style="display:inline-block; background-color:#4a7c59; color:#ffffff; font-size:13px; font-weight:500; padding:12px 24px; border-radius:100px; text-decoration:none; letter-spacing:0.03em;">
-                      回复客户邮件
+                      {{team_btnReply}}
                     </a>
                   </td>
                   <td>
                     <a href="{{phone_tel}}"
                       style="display:inline-block; background-color:transparent; color:#4a7c59; font-size:13px; font-weight:500; padding:11px 24px; border-radius:100px; text-decoration:none; border:1.5px solid #4a7c59; letter-spacing:0.03em;">
-                      拨打电话
+                      {{team_btnCall}}
                     </a>
                   </td>
                 </tr>
@@ -148,8 +148,8 @@
           <tr>
             <td style="background-color:#f0f5f2; border:1px solid #d6e8db; border-top:none; border-radius:0 0 16px 16px; padding:24px 40px; text-align:center;">
               <p style="font-size:11px; color:#3d5046; line-height:1.7; margin:0;">
-                此邮件由 <strong>herbvive.co</strong> 联系表单自动发送 · 请勿直接回复此邮件<br />
-                HERBVIVE · 美国康仁堂 · 1178 N Grove St Unit C, Anaheim CA 92806
+                {{team_footerLine1}}<br />
+                {{team_footerLine2}}
               </p>
             </td>
           </tr>

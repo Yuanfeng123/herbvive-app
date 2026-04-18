@@ -1,11 +1,14 @@
 'use client'
 
 import HeroCanvas from './HeroCanvas'
-import { useLang } from '@/context/LangContext'
+import { useLocale, useTranslations } from 'next-intl'
+import { useLang } from '@/lib/useLang'
 import { professionalRegisterUrl } from '@/lib/professionalPortal'
 
 export default function Hero() {
-  const { lang, t } = useLang()
+  const locale = useLocale()
+  const { lang } = useLang()
+  const t = useTranslations('Hero')
 
   return (
     <section className="min-h-screen pt-[108px] flex flex-col items-center justify-center bg-sage-ultra relative overflow-hidden">
@@ -13,50 +16,50 @@ export default function Hero() {
 
       <div className="relative z-10 text-center px-12 flex flex-col items-center animate-fadeUp max-w-[820px] mx-auto">
 
-        {/* Badge */}
         <span className="inline-block text-[11px] font-medium tracking-[0.12em] uppercase text-sage bg-sage-pale border border-border px-4 py-1.5 rounded-full mb-8">
-          Professional TCM · 专业草本
+          {t('badge')}
         </span>
 
-        {/* Title */}
         <h1 className="font-serif text-[clamp(44px,6.5vw,80px)] font-light leading-[1.12] text-ink tracking-[-0.015em] mb-6">
-          {lang === 'zh' ? (
-            <>面向中医从业者的<br /><em className="not-italic text-sage">专业草本解决方案</em></>
+          {locale === 'zh' ? (
+            <>
+              {t('titleTop')}
+              <br />
+              <em className="not-italic text-sage">{t('titleHighlight')}</em>
+            </>
           ) : (
-            <><em className="not-italic text-sage">Professional Herbal Solutions</em><br />for TCM Practitioners</>
+            <>
+              <em className="not-italic text-sage">{t('titleHighlight')}</em>
+              <br />
+              {t('titleTop')}
+            </>
           )}
         </h1>
 
-        {/* Subtitle */}
         <p className="text-[16px] text-ink-soft font-light leading-relaxed mb-4 max-w-[520px]">
-          {t('成品商城 · 配方定制 · 当日·次日达 · 全美覆盖',
-             'Finished Products · Custom Formula · Same / Next-Day · Nationwide')}
+          {t('subtitle')}
         </p>
 
-        {/* Stats strip */}
         <div className="flex items-center gap-6 mb-12 text-[12px] text-ink-soft font-light">
-          <span><strong className="text-sage font-medium">50+</strong> {t('成品产品', 'Products')}</span>
+          <span><strong className="text-sage font-medium">50+</strong> {t('statProducts')}</span>
           <span className="w-px h-3 bg-border" />
-          <span><strong className="text-sage font-medium">500+</strong> {t('草本品种', 'Herb Varieties')}</span>
+          <span><strong className="text-sage font-medium">500+</strong> {t('statHerbs')}</span>
           <span className="w-px h-3 bg-border" />
-          <span><strong className="text-sage font-medium">$0</strong> {t('加工费', 'Processing Fee')}</span>
+          <span><strong className="text-sage font-medium">$0</strong> {t('statProcessing')}</span>
           <span className="w-px h-3 bg-border" />
-          <span><strong className="text-sage font-medium">{t('全美', 'Nationwide')}</strong> {t('配送', 'Delivery')}</span>
+          <span><strong className="text-sage font-medium">{t('statNationwide')}</strong> {t('statDelivery')}</span>
         </div>
 
-        {/* ── CTA Button ── */}
         <a
           href={professionalRegisterUrl(lang)}
           className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-sage px-10 py-4 text-white no-underline shadow-[0_8px_32px_rgba(74,124,89,0.32)] transition-all duration-300 hover:shadow-[0_14px_44px_rgba(74,124,89,0.48)] hover:-translate-y-0.5 active:translate-y-0"
         >
-          {/* Shine sweep */}
           <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/18 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
 
           <span className="relative font-medium text-[15px] tracking-[0.025em]">
-            {t('立即注册体验', 'Register Now — Free')}
+            {t('cta')}
           </span>
 
-          {/* Arrow circle */}
           <span className="relative flex items-center justify-center w-7 h-7 rounded-full bg-white/20 transition-all duration-300 group-hover:bg-white/30 group-hover:translate-x-0.5">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M5 12h14M12 5l7 7-7 7" />
@@ -64,16 +67,14 @@ export default function Hero() {
           </span>
         </a>
 
-        {/* Trust note */}
         <p className="mt-5 text-[12px] text-ink-soft/55 font-light flex items-center gap-1.5">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3.5 h-3.5 flex-shrink-0 text-sage">
             <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
           </svg>
-          {t('仅限持有执照的中医从业者注册 · 免费开通', 'For licensed TCM practitioners only · Free to register')}
+          {t('trustNote')}
         </p>
       </div>
 
-      {/* Bottom gradient fade */}
       <div className="absolute bottom-0 left-0 right-0 h-28 pointer-events-none"
         style={{ background: 'linear-gradient(to bottom, transparent, rgba(244,249,246,0.7))' }} />
     </section>

@@ -1,6 +1,10 @@
 import fs from 'fs'
 import path from 'path'
 import sgMail from '@sendgrid/mail'
+import zhMessages from '../messages/zh.json'
+import enMessages from '../messages/en.json'
+
+export type ContactEmailLocale = 'zh' | 'en'
 
 export function fillTemplate(template: string, vars: Record<string, string>) {
   return Object.entries(vars).reduce(
@@ -17,30 +21,127 @@ function escapeHtml(text: string): string {
     .replace(/"/g, '&quot;')
 }
 
-const EMPTY = '未填写'
+function sanitizeSubjectLine(s: string): string {
+  return s.replace(/[\r\n]+/g, ' ').trim()
+}
 
-export function buildContactTemplateVars(payload: {
+function interpolateBraces(template: string, vars: Record<string, string>): string {
+  return template.replace(/\{(\w+)\}/g, (_, key: string) => vars[key] ?? '')
+}
+
+function flattenEmailStrings(
+  obj: Record<string, unknown>,
+  prefix: string
+): Record<string, string> {
+  const out: Record<string, string> = {}
+  for (const [k, v] of Object.entries(obj)) {
+    const key = `${prefix}_${k}`
+    if (typeof v === 'string') out[key] = v
+  }
+  return out
+}
+
+type ContactEmailBlock = {
+  empty: string
+  teamSubject: string
+  userSubject: string
+  team: Record<string, string>
+  user: Record<string, string>
+}
+
+function getContactEmailBlock(locale: ContactEmailLocale): ContactEmailBlock {
+  const root = (locale === 'en' ? enMessages : zhMessages) as {
+    ContactEmail: ContactEmailBlock
+  }
+  return root.ContactEmail
+}
+
+export function parseContactPayload(body: unknown): {
   name: string
   email: string
   phone: string
   clinic: string
   inquiry_type: string
   message: string
-}) {
+} | null {
+  if (!body || typeof body !== 'object') return null
+  const o = body as Record<string, unknown>
+  const name = typeof o.name === 'string' ? o.name.trim() : ''
+  const email = typeof o.email === 'string' ? o.email.trim() : ''
+  const message = typeof o.message === 'string' ? o.message.trim() : ''
+  if (!name || !email || !message) return null
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return null
+
+  return {
+    name,
+    email,
+    phone: typeof o.phone === 'string' ? o.phone : '',
+    clinic: typeof o.clinic === 'string' ? o.clinic : '',
+    inquiry_type: typeof o.inquiry_type === 'string' ? o.inquiry_type : '',
+    message,
+  }
+}
+
+function parseLocaleFromCookie(cookieHeader: string | null): ContactEmailLocale | null {
+  if (!cookieHeader) return null
+  const parts = cookieHeader.split(';').map((s) => s.trim())
+  for (const p of parts) {
+    if (p.startsWith('NEXT_LOCALE=')) {
+      const v = p.slice('NEXT_LOCALE='.length)
+      return v === 'en' ? 'en' : v === 'zh' ? 'zh' : null
+    }
+  }
+  return null
+}
+
+/** Prefer JSON `locale`; else `NEXT_LOCALE` cookie; default zh. */
+export function parseContactLocale(body: unknown, cookieHeader?: string | null): ContactEmailLocale {
+  if (body && typeof body === 'object') {
+    const raw = (body as Record<string, unknown>).locale
+    if (raw === 'en' || raw === 'zh') return raw
+  }
+  return parseLocaleFromCookie(cookieHeader ?? null) ?? 'zh'
+}
+
+export function buildContactTemplateVars(
+  payload: {
+    name: string
+    email: string
+    phone: string
+    clinic: string
+    inquiry_type: string
+    message: string
+  },
+  locale: ContactEmailLocale
+): Record<string, string> {
+  const emailBlock = getContactEmailBlock(locale)
+  const empty = emailBlock.empty
   const phoneTrim = payload.phone.trim()
   const phoneDigits = phoneTrim.replace(/\D/g, '')
+
+  const submittedAt =
+    new Date().toLocaleString(locale === 'en' ? 'en-US' : 'zh-CN', {
+      timeZone: 'America/Los_Angeles',
+    }) + (locale === 'en' ? ' (Pacific Time)' : ' PST')
+
+  const teamVars = flattenEmailStrings(emailBlock.team as unknown as Record<string, unknown>, 'team')
+  const userVars = flattenEmailStrings(emailBlock.user as unknown as Record<string, unknown>, 'user')
+
+  const replySubjectRaw = emailBlock.team.replyMailSubject
+  const team_replyMailSubjectEncoded = encodeURIComponent(replySubjectRaw)
 
   return {
     name: escapeHtml(payload.name.trim()),
     email: escapeHtml(payload.email.trim()),
-    phone: escapeHtml(phoneTrim || EMPTY),
-    clinic: escapeHtml(payload.clinic.trim() || EMPTY),
-    inquiry_type: escapeHtml(payload.inquiry_type.trim() || EMPTY),
+    phone: escapeHtml(phoneTrim || empty),
+    clinic: escapeHtml(payload.clinic.trim() || empty),
+    inquiry_type: escapeHtml(payload.inquiry_type.trim() || empty),
     message: escapeHtml(payload.message.trim()),
-    submitted_at:
-      new Date().toLocaleString('zh-CN', { timeZone: 'America/Los_Angeles' }) +
-      ' PST',
+    submitted_at: escapeHtml(submittedAt),
     phone_tel: phoneDigits ? `tel:${phoneDigits}` : '#',
+    team_replyMailSubjectEncoded,
+    ...teamVars,
+    ...userVars,
   }
 }
 
@@ -61,40 +162,17 @@ function parseTeamRecipients(value: string | undefined): string[] {
   return valid.length > 0 ? valid : fallback
 }
 
-export function parseContactPayload(body: unknown): {
-  name: string
-  email: string
-  phone: string
-  clinic: string
-  inquiry_type: string
-  message: string
-} | null {
-  if (!body || typeof body !== 'object') return null
-  const o = body as Record<string, unknown>
-  const name = typeof o.name === 'string' ? o.name.trim() : ''
-  const email = typeof o.email === 'string' ? o.email.trim() : ''
-  const message = typeof o.message === 'string' ? o.message.trim() : ''
-  if (!name || !email || !message) return null
-  if (!emailRe.test(email)) return null
-
-  return {
-    name,
-    email,
-    phone: typeof o.phone === 'string' ? o.phone : '',
-    clinic: typeof o.clinic === 'string' ? o.clinic : '',
-    inquiry_type: typeof o.inquiry_type === 'string' ? o.inquiry_type : '',
-    message,
-  }
-}
-
-export async function sendContactEmails(payload: {
-  name: string
-  email: string
-  phone: string
-  clinic: string
-  inquiry_type: string
-  message: string
-}) {
+export async function sendContactEmails(
+  payload: {
+    name: string
+    email: string
+    phone: string
+    clinic: string
+    inquiry_type: string
+    message: string
+  },
+  locale: ContactEmailLocale
+) {
   const apiKey = process.env.SENDGRID_API_KEY
   if (!apiKey) throw new Error('Missing SENDGRID_API_KEY')
 
@@ -107,7 +185,9 @@ export async function sendContactEmails(payload: {
 
   sgMail.setApiKey(apiKey)
 
-  const vars = buildContactTemplateVars(payload)
+  const emailBlock = getContactEmailBlock(locale)
+  const vars = buildContactTemplateVars(payload, locale)
+
   const teamTpl = fs.readFileSync(
     path.join(process.cwd(), 'emails/team-notification.html'),
     'utf8'
@@ -117,8 +197,15 @@ export async function sendContactEmails(payload: {
     'utf8'
   )
 
-  const inquiryShort = payload.inquiry_type.trim() || EMPTY
-  const subjectTeam = `📋 新询盘：${inquiryShort} · ${payload.name.trim()}`
+  const inquiryShort = sanitizeSubjectLine(payload.inquiry_type.trim() || emailBlock.empty)
+  const nameShort = sanitizeSubjectLine(payload.name.trim())
+  const subjectTeam = sanitizeSubjectLine(
+    interpolateBraces(emailBlock.teamSubject, {
+      inquiry: inquiryShort,
+      name: nameShort,
+    })
+  )
+  const subjectUser = sanitizeSubjectLine(emailBlock.userSubject)
 
   await Promise.all([
     sgMail.send({
@@ -131,7 +218,7 @@ export async function sendContactEmails(payload: {
     sgMail.send({
       to: payload.email.trim(),
       from,
-      subject: '感谢您的询盘，我们已收到！· HERBVIVE',
+      subject: subjectUser,
       html: fillTemplate(userTpl, vars),
     }),
   ])

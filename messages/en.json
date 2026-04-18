@@ -1,0 +1,789 @@
+{
+  "Navbar": {
+    "links": {
+      "home": "Home",
+      "brand": "Brand",
+      "quality": "Quality",
+      "innovation": "Innovation",
+      "contact": "Contact"
+    },
+    "login": "Login",
+    "register": "Register",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleLanguage": "Switch language",
+    "toggleZhLabel": "中",
+    "toggleEnLabel": "EN"
+  },
+  "Hero": {
+    "badge": "Professional TCM · Herbal Medicine",
+    "titleTop": "for TCM Practitioners",
+    "titleHighlight": "Professional Herbal Solutions",
+    "subtitle": "Finished Products · Custom Formula · Same / Next-Day · Nationwide",
+    "statProducts": "Products",
+    "statHerbs": "Herb Varieties",
+    "statProcessing": "Processing Fee",
+    "statNationwide": "Nationwide",
+    "statDelivery": "Delivery",
+    "cta": "Register Now — Free",
+    "trustNote": "For licensed TCM practitioners only · Free to register"
+  },
+  "Contact": {
+    "breadcrumb": "Home",
+    "page": "Contact Us",
+    "badge": "Contact · Get in Touch",
+    "heroTitle1": "Get in Touch",
+    "heroTitleEm": "Our Team",
+    "heroSub": "Whether you have questions, partnership inquiries, or product consultations — our team is ready to support you.",
+    "addressLabel": "Address",
+    "addressVal": "1178 N Grove St Unit C\nAnaheim, CA 92806",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Business Hours",
+    "hoursVal": "Mon – Fri  9:00 AM – 6:00 PM PST",
+    "wechatCardTitle": "WeChat Support",
+    "wechatCardBody": "Scan to add our sales manager for samples & a quote",
+    "formTitle": "Send a Message",
+    "formSub": "We typically respond within 1 business day.",
+    "fname": "Full Name",
+    "fnamePh": "Your name",
+    "femail": "Email Address",
+    "femailPh": "your@email.com",
+    "fphone": "Phone (optional)",
+    "fphonePh": "657-000-0000",
+    "fclinic": "Clinic / Organization (optional)",
+    "fclinicPh": "Clinic name",
+    "ftype": "Inquiry Type",
+    "fmsg": "Message",
+    "fmsgPh": "Please describe your inquiry…",
+    "fsend": "Send Message",
+    "fsending": "Sending…",
+    "successTitle": "Message Sent!",
+    "successSub": "We will get back to you shortly.",
+    "sendAnother": "Send another",
+    "errorSend": "Something went wrong. Please try again or email info@herbvive.co",
+    "mapEyebrow": "Location",
+    "mapTitle": "Our Location",
+    "mapSub": "Based in Anaheim, CA — serving licensed practitioners nationwide.",
+    "mapBtn": "Open in Google Maps",
+    "faqTitle": "FAQ",
+    "ftypes": [
+      "Ready-Made Products",
+      "Custom Formula",
+      "Partnership",
+      "Quality Issue",
+      "Other"
+    ],
+    "faqs": [
+      {
+        "q": "How do I register as a member physician?",
+        "a": "After submitting your practitioner license, we will review and activate your account within 1 business day."
+      },
+      {
+        "q": "Is there a minimum order for custom formulas?",
+        "a": "No. There is no minimum order quantity for custom formulas. Order as needed with zero processing fees."
+      },
+      {
+        "q": "What areas do you ship to?",
+        "a": "We ship nationwide across all 50 states, with next-day delivery available in select areas."
+      },
+      {
+        "q": "Are your products GMP certified?",
+        "a": "Yes. All products are sourced from GMP-certified facilities backed by Kangrentang Pharmaceutical's quality system."
+      }
+    ]
+  },
+  "ContactEmail": {
+    "empty": "Not provided",
+    "teamSubject": "📋 New inquiry: {inquiry} · {name}",
+    "userSubject": "Thank you — we received your message · HERBVIVE",
+    "team": {
+      "htmlLang": "en",
+      "docTitle": "New inquiry · HERBVIVE",
+      "headerTagline": "Kangrentang USA · Lead notification",
+      "banner": "🔔 &nbsp;You have a new contact form submission",
+      "inquiryTypePrefix": "Inquiry type:",
+      "sectionCustomer": "Contact details",
+      "labelName": "Name",
+      "labelEmail": "Email",
+      "labelPhone": "Phone",
+      "labelClinic": "Clinic / Organization",
+      "labelSubmittedAt": "Received",
+      "sectionMessage": "Message",
+      "btnReply": "Reply by email",
+      "btnCall": "Call",
+      "replyMailSubject": "Re: HERBVIVE inquiry follow-up",
+      "footerLine1": "This message was sent automatically by the <strong>herbvive.co</strong> contact form · Please do not reply directly to this email",
+      "footerLine2": "HERBVIVE · Kangrentang USA · 1178 N Grove St Unit C, Anaheim CA 92806"
+    },
+    "user": {
+      "htmlLang": "en",
+      "docTitle": "Thank you for your inquiry · HERBVIVE",
+      "headerSubtitle": "Kangrentang USA · American Kanrentang",
+      "heroTitlePrefix": "Thank you for your inquiry, ",
+      "heroTitleSuffix": "!",
+      "heroSubHtml": "We have received your message. Our team will reach out within <strong style=\"color:#ffffff;\">1 business day</strong>.",
+      "greetingBeforeName": "Hello ",
+      "greetingAfterName": ",",
+      "greetingSecond": "Thank you for submitting an inquiry through the HERBVIVE website. Below is a summary of your submission for your records.",
+      "summaryTitle": "Submission summary",
+      "labelName": "Name",
+      "labelEmail": "Email",
+      "labelInquiryType": "Inquiry type",
+      "labelMessage": "Message",
+      "whatsNextTitle": "What happens next?",
+      "step1Title": "We review your inquiry",
+      "step1Desc": "A member of our team will review your request within 1 business day.",
+      "step2Title": "We follow up with you",
+      "step2Desc": "We will contact you by email or phone to confirm details and share next steps.",
+      "urgentIntro": "If you need urgent assistance, you can also reach us directly:",
+      "labelEmailBox": "📧 Email",
+      "labelPhoneBox": "📞 Phone",
+      "ctaWebsite": "Visit HERBVIVE →",
+      "disclaimer": "* Products and services on this platform are not intended to diagnose, treat, cure, or prevent any disease and are not a substitute for professional medical advice. Services are intended to support licensed practitioners.",
+      "footerCopyright": "© 2025 HERBVIVE · Kangrentang USA. All rights reserved."
+    }
+  },
+  "Layout": {
+    "title": "HERBVIVE · Kangrentang USA",
+    "description": "Professional herbal solutions for licensed TCM practitioners."
+  },
+  "BrandPage": {
+    "title": "Brand · HERBVIVE",
+    "description": "Technology and intelligent services to help clinics run granule-based herbal care efficiently, safely, and smartly."
+  },
+  "QualityPage": {
+    "title": "Quality · HERBVIVE",
+    "description": "Advancing herbal standardization through science and rigorous quality control."
+  },
+  "InnovationPage": {
+    "title": "Innovation · HERBVIVE",
+    "description": "Product innovation driven by science to elevate the herbal medicine industry."
+  },
+  "Footer": {
+    "taglineLine1": "Kangrentang USA",
+    "taglineLine2": "Professional herbal solutions for licensed TCM practitioners.",
+    "wechatOfficial": "Official WeChat",
+    "productServicesTitle": "Products & Services",
+    "aboutTitle": "About",
+    "copyright": "© 2025 HERBVIVE · Kangrentang USA. All rights reserved.",
+    "taglineEn": "Professional TCM solutions for licensed practitioners",
+    "wechatQrAlt": "HERBVIVE official WeChat QR code",
+    "productLinks": [
+      {
+        "href": "#",
+        "label": "Ready-Made Store"
+      },
+      {
+        "href": "#",
+        "label": "Custom Formula Platform"
+      },
+      {
+        "href": "#",
+        "label": "Product Catalog"
+      },
+      {
+        "href": "#",
+        "label": "Quality Standards"
+      }
+    ],
+    "aboutLinks": [
+      {
+        "href": "#",
+        "label": "Company"
+      },
+      {
+        "href": "#",
+        "label": "Practitioner Verification"
+      },
+      {
+        "href": "#",
+        "label": "Contact"
+      },
+      {
+        "href": "#",
+        "label": "Privacy Policy"
+      }
+    ]
+  },
+  "Disclaimer": {
+    "body": "†These statements have not been evaluated by the U.S. Food and Drug Administration (FDA). Products are not intended to diagnose, treat, cure, or prevent any disease. Information on www.herbvive.co is for general reference only and is not a substitute for professional medical advice. Herbvive reserves all rights to its content. Reproduction in whole or in part is prohibited without permission and clear attribution to Herbvive."
+  },
+  "TickerBar": {
+    "stockMobile": "Stock",
+    "stockDesktop": "LIVE · Inventory",
+    "inStock": "In stock",
+    "items": [
+      {
+        "name": "Astragalus (Huangqi)",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Atractylodes (Baizhu)",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Angelica (Danggui)",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Ginseng (Renshen)",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Goji Berry",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Salvia (Danshen)",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Poria (Fuling)",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Licorice (Gancao)",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Ligusticum (Chuanxiong)",
+        "tag": "✓ GMP"
+      },
+      {
+        "name": "Schisandra (Wuweizi)",
+        "tag": "✓ GMP"
+      }
+    ]
+  },
+  "Products": {
+    "eyebrow": "Ready-Made · Finished Products",
+    "title": "Curated Finished Products",
+    "body": "Premium herbal formulations with standardized manufacturing. Every bottle is quality-tested with clear labeling and transparent ingredients—ready to recommend to patients.",
+    "ctaShop": "Enter Store",
+    "ctaCatalog": "View Catalog",
+    "stat1Label": "Clinic picks · Core assortment",
+    "stat2Label": "Certified production",
+    "imageAlt": "HERBVIVE bottled product showcase"
+  },
+  "Formula": {
+    "eyebrow": "Custom Formula · Tailored blends",
+    "titleLine1": "Personalized",
+    "titleLine2": "Formula Platform",
+    "fee0a": "$0 processing",
+    "fee0b": "$0 packaging",
+    "fee0c": "$0 hidden fees",
+    "body": "Tailor herbal formulas to patient needs with a simple workflow, transparent pricing, and no hidden charges.",
+    "cta": "Start customizing",
+    "mockTitle": "🌿 New formula — Patient #2047",
+    "addHerb": "+ Add herb",
+    "dash": "—",
+    "shippingLabel": "Shipping",
+    "shippingBadge": "Next-day",
+    "processingLabel": "Processing fee",
+    "submit": "Submit formula →",
+    "features": [
+      {
+        "title": "Flexible combinations",
+        "desc": "Combine multiple herbs freely"
+      },
+      {
+        "title": "Flexible delivery",
+        "desc": "Ship to clinic or patient"
+      },
+      {
+        "title": "Same / next-day prep",
+        "desc": "Fast turnaround and fulfillment"
+      },
+      {
+        "title": "Online management",
+        "desc": "Orders and formulas in one place"
+      }
+    ],
+    "herbs": [
+      {
+        "name": "Astragalus membranaceus",
+        "amount": "15g"
+      },
+      {
+        "name": "Atractylodes macrocephala",
+        "amount": "12g"
+      },
+      {
+        "name": "Poria cocos",
+        "amount": "10g"
+      }
+    ]
+  },
+  "HomeVideos": {
+    "eyebrow": "Product Demo · Highlights",
+    "heading": "Core platform walkthroughs",
+    "items": [
+      {
+        "title": "Smart formula workspace",
+        "subtitle": "Search granules quickly; auto concentration ratio and pricing",
+        "src": "/智能配方系统-快速搜索颗粒，自动计算浓缩比与价格.mp4"
+      },
+      {
+        "title": "One-click protocol orders",
+        "subtitle": "Order common formulas instantly—fewer repetitive steps",
+        "src": "/协定方一键下单-常用方直接下单，无需重复操作，高效便捷.mp4"
+      },
+      {
+        "title": "Flexible unit packaging",
+        "subtitle": "Granule packaging tailored to your workflow",
+        "src": "/单位颗粒灵活分装-满足您的个性化需求.mp4"
+      }
+    ]
+  },
+  "Process": {
+    "eyebrow": "How It Works · Workflow",
+    "heading": "Four simple steps",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Register · Practitioner",
+        "desc": "Submit credentials for verification and activate your account."
+      },
+      {
+        "num": "02",
+        "title": "Browse · Formulate",
+        "desc": "Shop finished products or build personalized formulas online."
+      },
+      {
+        "num": "03",
+        "title": "Dispense · QC",
+        "desc": "Prepared same-day with strict quality checks for accuracy."
+      },
+      {
+        "num": "04",
+        "title": "Same / next day",
+        "desc": "Ship nationwide to clinic or patient addresses."
+      }
+    ],
+    "stats": [
+      {
+        "val": "24h",
+        "label": "Avg. fulfillment window"
+      },
+      {
+        "val": "500+",
+        "label": "Raw herb varieties"
+      },
+      {
+        "val": "$0",
+        "label": "Custom processing fee"
+      }
+    ]
+  },
+  "CTA": {
+    "eyebrow": "Get Started",
+    "titleLine1": "Start with",
+    "titleEm": "HERBVIVE",
+    "sub": "Serving licensed practitioners nationwide · Efficient, professional, dependable",
+    "ctaShop": "Enter store",
+    "ctaCustom": "Start customizing",
+    "wechatNote": "Official WeChat · Scan to connect"
+  },
+  "BrandHero": {
+    "home": "Home",
+    "crumbCurrent": "Brand",
+    "eyebrow": "Brand Story",
+    "titleLine1": "Clinical herbal care,",
+    "titleEm": "formulas",
+    "titleLine2": " powered by a smart platform",
+    "sub": "Technology and intelligent services to help TCM clinics deliver granule-based care efficiently, safely, and smartly."
+  },
+  "BrandOverview": {
+    "imageAlt": "HERBVIVE company showcase",
+    "eyebrow": "About Us",
+    "heading": "Kangrentang Pharmaceutical",
+    "p1": "Kangrentang Pharmaceutical advances herbal standardization and modernization with national-grade research systems.",
+    "p2": "For over 20 years, Kangrentang has focused on granule R&D and manufacturing as one of China’s earliest pilot enterprises—driving standardization and intelligent production.",
+    "p3": "Core technologies and IP, robust QC, and modern manufacturing transform traditional decoctions into standardized preparations.",
+    "ctaContact": "Contact us",
+    "ctaQuality": "Explore quality assurance"
+  },
+  "StatsRow": {
+    "stats": [
+      {
+        "num": "20",
+        "unit": "+",
+        "label": "Years in the industry"
+      },
+      {
+        "num": "160",
+        "unit": "+",
+        "label": "Patents"
+      },
+      {
+        "num": "80",
+        "unit": "+",
+        "label": "National honors"
+      },
+      {
+        "num": "20",
+        "unit": "+",
+        "label": "Countries & regions"
+      }
+    ]
+  },
+  "Partnership": {
+    "eyebrow": "Our strengths",
+    "heading": "Three core pillars",
+    "sub": "Top-tier herbal resources, technology, and services for licensed practitioners.",
+    "cards": [
+      {
+        "title": "Quality assurance",
+        "desc": "Backed by Kangrentang R&D and rigorous QC—from GMP production to full traceability."
+      },
+      {
+        "title": "HERBVIVE × Kangrentang",
+        "desc": "Smart ordering, automated dispensing, and logistics tracking—same-day prep and next-day delivery with end-to-end online management."
+      },
+      {
+        "title": "Win-win partnership",
+        "desc": "Improve clinic efficiency and revenue with flexible models that support long-term practice growth."
+      }
+    ]
+  },
+  "CooperationModes": {
+    "eyebrow": "Cooperation models",
+    "heading": "Flexible ways to work together",
+    "modes": [
+      {
+        "num": "01",
+        "title": "Bulk purchasing · Finished goods",
+        "desc": "For clinics and pharmacies that need volume—flexible programs for different scales.",
+        "tag": "Ready-Made"
+      },
+      {
+        "num": "02",
+        "title": "Prescription upload · Custom formulas",
+        "desc": "Upload prescriptions for personalized blends with dedicated support for each order.",
+        "tag": "Custom Formula"
+      },
+      {
+        "num": "03",
+        "title": "Reliable logistics · On-time delivery",
+        "desc": "Temperature-aware logistics across major U.S. metros—ship to clinic or patient.",
+        "tag": "Nationwide"
+      }
+    ]
+  },
+  "ContactCard": {
+    "titleLine1": "Request samples",
+    "titleLine2": "Scan to add our sales manager on WeChat",
+    "body": "Learn more about partnership models and products.",
+    "emailCta": "Email us",
+    "rows": [
+      {
+        "key": "address",
+        "label": "Address",
+        "value": "1178 N Grove St Unit C, Anaheim CA 92806"
+      },
+      {
+        "key": "email",
+        "label": "Email",
+        "value": "info@herbvive.co",
+        "href": "mailto:info@herbvive.co"
+      },
+      {
+        "key": "phone",
+        "label": "Phone",
+        "value": "657-781-0476",
+        "href": "tel:6577810476"
+      },
+      {
+        "key": "web",
+        "label": "Website",
+        "value": "www.herbvive.co",
+        "href": "https://www.herbvive.co"
+      }
+    ]
+  },
+  "BrandCTA": {
+    "eyebrow": "Get Started",
+    "titleLine1": "Launch your herbal program with",
+    "titleEm": "HERBVIVE",
+    "sub": "Serving licensed practitioners nationwide · Efficient, professional, dependable",
+    "ctaShop": "Enter store",
+    "ctaCustom": "Start customizing"
+  },
+  "InnovationHero": {
+    "home": "Home",
+    "crumbCurrent": "Innovation",
+    "eyebrow": "Product Innovation",
+    "titleLine1": "Innovation that ",
+    "titleEm": "modernizes",
+    "titleLine2": " herbal medicine with science",
+    "sub": "From technology to production, every step is grounded in evidence and engineering."
+  },
+  "TechInnovation": {
+    "eyebrow": "Technology",
+    "heading": "“Full-spectrum” extraction",
+    "headingBreak": "Industry-leading approach",
+    "coreTitle": "Core patented technology",
+    "coreBody": "Transfers the full composition of traditional decoctions into granules—beyond partial extracts—with >98% transfer rates to preserve clinical efficacy.",
+    "quoteTitle": "Single-decoction ≈ co-decoction consistency",
+    "quoteBody": "Standardized full-spectrum processing helps single-herb granule combinations mirror whole-decoction profiles for more consistent clinical outcomes.",
+    "linkQuality": "Quality system",
+    "linkMore": "Learn more",
+    "chartCaption": "Full-spectrum transfer comparison",
+    "barDecoction": "Traditional decoction (reference)",
+    "barHerbvive": "Full-spectrum formula granules (HERBVIVE)",
+    "barMarket": "Typical single-herb granules",
+    "spectraCaption": "FTIR fingerprint comparison — absorption peak alignment",
+    "transferAria": "Transfer rate {pct}"
+  },
+  "CompareTable": {
+    "eyebrow": "Comparison",
+    "heading": "Why Kangrentang dry granulation stands out",
+    "sub": "Side-by-side look at two mainstream granulation approaches—from process to clinic use.",
+    "colLabel": "Topic",
+    "colA": "Dry granulation (Kangrentang)",
+    "colB": "Wet granulation (typical vendors)",
+    "rows": [
+      {
+        "label": "Granulation method",
+        "a": "Compress dried extract powder under pressure—no binders or excipients required",
+        "b": "Requires starch, dextrin, sugar, etc., forming a wet mass before drying"
+      },
+      {
+        "label": "Excipients",
+        "a": "Excipient-free for ~98% of SKUs (trace amounts only when needed for difficult herbs)—no added sugar or starch",
+        "b": "Contains excipients—often 5–20% sugar or starch"
+      },
+      {
+        "label": "Active component retention",
+        "a": "Preserves actives without heat/excipient-related losses",
+        "b": "Heat-sensitive components may degrade; excipients can affect dissolution"
+      },
+      {
+        "label": "Granule stability",
+        "a": "High purity, low hygroscopicity, fast dissolution",
+        "b": "Sugar/starch blends may clump and dissolve more slowly"
+      },
+      {
+        "label": "Taste & appearance",
+        "a": "Closer to traditional decoction—naturally deeper color",
+        "b": "Often sweeter taste and lighter color"
+      },
+      {
+        "label": "Who it fits",
+        "a": "Suitable for diabetes and low-sugar diets",
+        "b": "Less suitable when sugar control is required"
+      }
+    ]
+  },
+  "Production": {
+    "eyebrow": "Manufacturing",
+    "headingLine1": "Digital, automated",
+    "headingLine2": "production",
+    "sub": "Parameterized, automated processing for digital, intelligent, scalable herbal manufacturing.",
+    "equipmentCaption": "Modern equipment highlights",
+    "processSteps": [
+      {
+        "title": "Sourcing & processing",
+        "desc": "Authentic materia medica with classical preprocessing to maximize actives."
+      },
+      {
+        "title": "Extraction & concentration",
+        "desc": "Full-spectrum extraction with precise temperature control—typically >98% retention."
+      },
+      {
+        "title": "Drying & granulation",
+        "desc": "Spray drying and fluid-bed granulation—minimal excipients, uniform granules, excellent solubility."
+      },
+      {
+        "title": "Release testing",
+        "desc": "FTIR fingerprinting and assay per batch—complete QC documentation before release."
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Extraction & concentration vessels",
+        "sub": "GMP-grade stainless steel"
+      },
+      {
+        "name": "Ball mill & filtration",
+        "sub": "Precision filtration train"
+      },
+      {
+        "name": "Carton packaging line",
+        "sub": "Automated packaging"
+      },
+      {
+        "name": "Vertical storage system",
+        "sub": "Local warehouse management"
+      }
+    ]
+  },
+  "ClinicalData": {
+    "eyebrow": "Clinical evidence",
+    "statNumber": "122",
+    "statUnit": "items",
+    "statLabel": "Clinical observations",
+    "statSub": "20,000+ cases across multi-center, multi-disease studies",
+    "cards": [
+      {
+        "num": "500",
+        "sup": "+",
+        "desc": "500+ raw herb varieties covering common clinical formulas"
+      },
+      {
+        "num": "98",
+        "sup": "%+",
+        "desc": "Full-spectrum transfer rates exceeding typical market products"
+      },
+      {
+        "num": "$0",
+        "sup": "",
+        "desc": "$0 custom processing—granules billed on raw material cost without extra packaging fees"
+      }
+    ]
+  },
+  "InnovationCTA": {
+    "eyebrow": "Get Started",
+    "titleLine1": "Innovation that elevates",
+    "titleLine2": "",
+    "titleEm": "clinical outcomes",
+    "sub": "Serving licensed practitioners nationwide · Efficient, professional, dependable",
+    "ctaShop": "Enter store",
+    "ctaCustom": "Start customizing"
+  },
+  "QualityHero": {
+    "home": "Home",
+    "crumbCurrent": "Quality",
+    "eyebrow": "Quality assurance",
+    "titleLine1": "National programs,",
+    "titleEm": "research-led",
+    "titleLine2": "modernization of herbal medicine",
+    "sub": "Science-driven standardization and strict controls for safer use—every bottle follows rigorous QA."
+  },
+  "QualitySystem": {
+    "eyebrow": "Quality system",
+    "headingLine1": "Three pillars of",
+    "headingLine2": "quality assurance",
+    "sub": "Scientific standards from sourcing to release—safety and efficacy at every step.",
+    "ctaInnovation": "Explore product innovation",
+    "certHeading": "Certifications",
+    "cards": [
+      {
+        "title": "Patented processes",
+        "desc": "Multiple granule process patents—from extraction to drying—optimized to preserve actives."
+      },
+      {
+        "title": "FTIR fingerprint library",
+        "desc": "500+ herb fingerprints for rapid identification and finished-product testing."
+      },
+      {
+        "title": "Standardized lab instruments",
+        "desc": "HPLC, GC-MS, and other international-grade instruments for batch consistency."
+      }
+    ],
+    "badges": [
+      {
+        "label": "GMP",
+        "sub": "International manufacturing practice"
+      },
+      {
+        "label": "FDA filing",
+        "sub": "U.S. regulatory pathway"
+      },
+      {
+        "label": "National programs",
+        "sub": "Government-backed research"
+      },
+      {
+        "label": "ISO quality",
+        "sub": "International quality management"
+      },
+      {
+        "label": "Listed-company quality",
+        "sub": "Kangrentang · 300026"
+      },
+      {
+        "label": "Full traceability",
+        "sub": "From origin to clinic"
+      }
+    ]
+  },
+  "Timeline": {
+    "eyebrow": "History",
+    "heading": "Research journey",
+    "sub": "Since 2002, continuous investment in modern granule processes and quality standards—from classical processing to standardized preparations.",
+    "items": [
+      {
+        "side": "left",
+        "year": "2002",
+        "event": "Standardization foundations",
+        "desc": "Launched granule standardization research with end-to-end QC and early national certification."
+      },
+      {
+        "side": "right",
+        "year": "2008",
+        "event": "National program breakthroughs",
+        "desc": "Led national projects solving fingerprinting and quantitative assay challenges—helping set industry standards."
+      },
+      {
+        "side": "left",
+        "year": "2015",
+        "event": "Global quality alignment",
+        "desc": "International quality certifications aligned with FDA/GMP norms—expanding into North America."
+      },
+      {
+        "side": "right",
+        "year": "Today",
+        "event": "Continuous innovation",
+        "desc": "Evolving testing and QC standards—leading private-market granules with a North America focus."
+      }
+    ]
+  },
+  "Science": {
+    "eyebrow": "Science",
+    "heading": "Research & testing capabilities",
+    "sub": "Modern herbal research and analytics built on advanced instrumentation.",
+    "cards": [
+      {
+        "title": "Fingerprint comparison",
+        "desc": "FTIR fingerprints for raw materials and finished goods—large proprietary library to deter adulteration."
+      },
+      {
+        "title": "Quantitative assays",
+        "desc": "HPLC quantitation per batch to ensure actives meet specification."
+      },
+      {
+        "title": "Batch stability control",
+        "desc": "SPC monitoring for consistent quality aligned with clinical expectations."
+      }
+    ]
+  },
+  "OutputGuarantee": {
+    "eyebrow": "Output assurance",
+    "heading": "Three delivery guarantees",
+    "cards": [
+      {
+        "title": "Standardized QC",
+        "desc": "Release by procedure—consistent batches and predictable clinical experience."
+      },
+      {
+        "title": "Online storefront",
+        "desc": "Browse with live inventory, clear checkout, and dependable fulfillment."
+      },
+      {
+        "title": "Personalized formulas",
+        "desc": "Practitioner-specific blends with automated compatibility checks and professional oversight."
+      }
+    ]
+  },
+  "QualityCTA": {
+    "eyebrow": "Get Started",
+    "titleLine1": "Research-backed",
+    "titleLine2": "safety for every",
+    "titleEm": "prescription",
+    "sub": "Serving licensed practitioners nationwide · Efficient, professional, dependable",
+    "ctaShop": "Enter store",
+    "ctaInnovation": "Product innovation"
+  }
+}

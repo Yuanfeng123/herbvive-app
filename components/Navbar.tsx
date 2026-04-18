@@ -3,15 +3,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { useLang } from '@/context/LangContext'
+import { useTranslations } from 'next-intl'
+import { useLang } from '@/lib/useLang'
 import { PROFESSIONAL_PORTAL_URL, professionalRegisterUrl } from '@/lib/professionalPortal'
 
 const navLinks = [
-  { href: '/',           zh: '首页',   en: 'Home' },
-  { href: '/brand',      zh: '品牌介绍', en: 'Brand' },
-  { href: '/quality',    zh: '质量保证', en: 'Quality' },
-  { href: '/innovation', zh: '产品创新', en: 'Innovation' },
-  { href: '/contact',    zh: '联系我们', en: 'Contact' },
+  { href: '/', key: 'home' as const },
+  { href: '/brand', key: 'brand' as const },
+  { href: '/quality', key: 'quality' as const },
+  { href: '/innovation', key: 'innovation' as const },
+  { href: '/contact', key: 'contact' as const },
 ]
 
 interface NavbarProps {
@@ -19,7 +20,8 @@ interface NavbarProps {
 }
 
 export default function Navbar({ activePath }: NavbarProps) {
-  const { lang, toggle, t } = useLang()
+  const { lang, toggle } = useLang()
+  const t = useTranslations('Navbar')
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -38,7 +40,6 @@ export default function Navbar({ activePath }: NavbarProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-[200] flex items-center justify-between px-4 sm:px-6 lg:px-12 h-[72px] bg-white/92 backdrop-blur-[12px] border-b border-border">
       <Link href="/" className="inline-flex items-center no-underline flex-shrink-0">
-        {/* <span className="font-serif text-xl sm:text-2xl font-light text-ink tracking-wider">HERBVIVE</span> */}
         <Image
           src="/herbvive.png"
           alt="HERBVIVE"
@@ -62,7 +63,7 @@ export default function Navbar({ activePath }: NavbarProps) {
                     : 'font-normal text-ink-soft'
                   }`}
               >
-                {t(link.zh, link.en)}
+                {t(`links.${link.key}`)}
               </Link>
             </li>
           )
@@ -74,7 +75,7 @@ export default function Navbar({ activePath }: NavbarProps) {
           <button
             type="button"
             onClick={toggle}
-            aria-label="Toggle language"
+            aria-label={t('toggleLanguage')}
             className="relative flex items-center h-8 w-[72px] rounded-full border border-border bg-mist transition-colors duration-300 hover:border-sage/50 focus:outline-none focus:ring-2 focus:ring-sage/30"
           >
             <span
@@ -83,11 +84,11 @@ export default function Navbar({ activePath }: NavbarProps) {
             />
             <span className={`relative z-10 w-[36px] text-center text-[11px] font-medium transition-colors duration-200
               ${lang === 'zh' ? 'text-white' : 'text-ink-soft'}`}>
-              中
+              {t('toggleZhLabel')}
             </span>
             <span className={`relative z-10 w-[36px] text-center text-[11px] font-medium transition-colors duration-200
               ${lang === 'en' ? 'text-white' : 'text-ink-soft'}`}>
-              EN
+              {t('toggleEnLabel')}
             </span>
           </button>
 
@@ -98,13 +99,13 @@ export default function Navbar({ activePath }: NavbarProps) {
               href={PROFESSIONAL_PORTAL_URL}
               className="px-4 sm:px-5 py-[10px] no-underline text-white hover:bg-white/10 transition-colors whitespace-nowrap"
             >
-              {t('登录', 'Login')}
+              {t('login')}
             </a>
             <a
               href={professionalRegisterUrl(lang)}
               className="px-4 sm:px-5 py-[10px] no-underline text-white hover:bg-white/10 transition-colors whitespace-nowrap"
             >
-              {t('注册', 'Register')}
+              {t('register')}
             </a>
           </div>
         </div>
@@ -114,13 +115,13 @@ export default function Navbar({ activePath }: NavbarProps) {
             href={PROFESSIONAL_PORTAL_URL}
             className="px-3 py-2 no-underline text-white hover:bg-white/10 whitespace-nowrap"
           >
-            {t('登录', 'Login')}
+            {t('login')}
           </a>
           <a
             href={professionalRegisterUrl(lang)}
             className="px-3 py-2 no-underline text-white hover:bg-white/10 whitespace-nowrap"
           >
-            {t('注册', 'Register')}
+            {t('register')}
           </a>
         </div>
 
@@ -128,7 +129,7 @@ export default function Navbar({ activePath }: NavbarProps) {
           type="button"
           onClick={() => setMenuOpen((o) => !o)}
           aria-expanded={menuOpen}
-          aria-label={menuOpen ? t('关闭菜单', 'Close menu') : t('打开菜单', 'Open menu')}
+          aria-label={menuOpen ? t('closeMenu') : t('openMenu')}
           className="lg:hidden flex flex-col justify-center gap-[5px] w-10 h-10 rounded-lg border border-border bg-mist/80 focus:outline-none focus:ring-2 focus:ring-sage/30"
         >
           <span className={`block h-0.5 w-5 bg-ink mx-auto rounded transition-transform ${menuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
@@ -141,7 +142,7 @@ export default function Navbar({ activePath }: NavbarProps) {
         <>
           <button
             type="button"
-            aria-label={t('关闭菜单', 'Close menu')}
+            aria-label={t('closeMenu')}
             className="lg:hidden fixed inset-0 top-[72px] z-[198] bg-ink/25"
             onClick={() => setMenuOpen(false)}
           />
@@ -157,7 +158,7 @@ export default function Navbar({ activePath }: NavbarProps) {
                       className={`block py-3.5 px-2 text-[15px] no-underline border-b border-border/80
                         ${isActive ? 'font-medium text-sage' : 'text-ink-soft'}`}
                     >
-                      {t(link.zh, link.en)}
+                      {t(`links.${link.key}`)}
                     </Link>
                   </li>
                 )
@@ -167,15 +168,15 @@ export default function Navbar({ activePath }: NavbarProps) {
               <button
                 type="button"
                 onClick={toggle}
-                aria-label="Toggle language"
+                aria-label={t('toggleLanguage')}
                 className="relative flex items-center h-8 w-[72px] rounded-full border border-border bg-white transition-colors duration-300"
               >
                 <span
                   className={`absolute top-[3px] h-[22px] w-[32px] rounded-full bg-sage shadow-sm transition-all duration-300
                     ${lang === 'zh' ? 'left-[3px]' : 'left-[37px]'}`}
                 />
-                <span className={`relative z-10 w-[36px] text-center text-[11px] font-medium ${lang === 'zh' ? 'text-white' : 'text-ink-soft'}`}>中</span>
-                <span className={`relative z-10 w-[36px] text-center text-[11px] font-medium ${lang === 'en' ? 'text-white' : 'text-ink-soft'}`}>EN</span>
+                <span className={`relative z-10 w-[36px] text-center text-[11px] font-medium ${lang === 'zh' ? 'text-white' : 'text-ink-soft'}`}>{t('toggleZhLabel')}</span>
+                <span className={`relative z-10 w-[36px] text-center text-[11px] font-medium ${lang === 'en' ? 'text-white' : 'text-ink-soft'}`}>{t('toggleEnLabel')}</span>
               </button>
             </div>
           </div>

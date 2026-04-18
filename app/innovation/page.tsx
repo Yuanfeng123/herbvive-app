@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import RevealObserver from '@/components/RevealObserver'
@@ -8,9 +10,12 @@ import Production from '@/components/innovation/Production'
 import ClinicalData from '@/components/innovation/ClinicalData'
 import InnovationCTA from '@/components/innovation/InnovationCTA'
 
-export const metadata = {
-  title: '产品创新 · HERBVIVE 美国康仁堂',
-  description: '以创新驱动产品升级，推动中药产业高质量发展。',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('InnovationPage')
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
 }
 
 export default function InnovationPage() {

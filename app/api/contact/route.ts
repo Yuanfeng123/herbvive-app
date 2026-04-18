@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { parseContactPayload, sendContactEmails } from '@/lib/contactEmail'
+import { parseContactLocale, parseContactPayload, sendContactEmails } from '@/lib/contactEmail'
 
 export async function POST(req: Request) {
   let body: unknown
@@ -14,8 +14,10 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, error: 'invalid_fields' }, { status: 400 })
   }
 
+  const locale = parseContactLocale(body, req.headers.get('cookie'))
+
   try {
-    await sendContactEmails(payload)
+    await sendContactEmails(payload, locale)
   } catch (err) {
     console.error('[contact]', err)
     return NextResponse.json({ ok: false, error: 'send_failed' }, { status: 502 })

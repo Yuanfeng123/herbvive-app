@@ -1,11 +1,9 @@
-const stats = [
-  { num: '20', unit: '+', label: '年行业经验' },
-  { num: '160', unit: '+', label: '专利技术' },
-  { num: '80', unit: '+', label: '国家级荣誉' },
-  { num: '20', unit: '+', label: '覆盖全球国家地区' },
-]
+import { getTranslations } from 'next-intl/server'
 
-export default function StatsRow() {
+export default async function StatsRow() {
+  const t = await getTranslations('StatsRow')
+  const stats = t.raw('stats') as { num: string; unit: string; label: string }[]
+
   return (
     <div className="bg-sage-ultra border-t border-b border-border">
       <div className="grid grid-cols-2 lg:grid-cols-4 reveal">
@@ -19,7 +17,7 @@ export default function StatsRow() {
           >
             <div className="font-serif text-[38px] sm:text-[46px] lg:text-[52px] font-light text-sage leading-none">
               {stat.num}
-              {stat.unit && <span className="text-[16px] text-sage-light">{stat.unit}</span>}
+              {stat.unit ? <span className="text-[16px] text-sage-light">{stat.unit}</span> : null}
             </div>
             <div className="text-[12px] text-ink-soft mt-2 tracking-[0.04em]">{stat.label}</div>
           </div>

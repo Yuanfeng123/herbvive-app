@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server'
 import WeChatQR from '@/components/WeChatQR'
 import { PROFESSIONAL_PORTAL_URL } from '@/lib/professionalPortal'
 
@@ -9,7 +10,10 @@ function ArrowIcon({ size = 16 }: { size?: number }) {
   )
 }
 
-export default function CTA() {
+export default async function CTA() {
+  const t = await getTranslations('CTA')
+  const tFooter = await getTranslations('Footer')
+
   return (
     <section
       id="contact"
@@ -18,33 +22,33 @@ export default function CTA() {
     >
       <div className="max-w-[1120px] mx-auto reveal">
         <p className="text-[11px] tracking-[0.12em] uppercase text-sage font-medium mb-3">
-          Get Started · 立即开始
+          {t('eyebrow')}
         </p>
         <h2 className="font-serif text-[clamp(36px,5vw,64px)] font-light text-ink mb-3 leading-[1.2]">
-          立即开始使用<br />
-          <em className="not-italic text-sage">HERBVIVE</em>
+          {t('titleLine1')}<br />
+          <em className="not-italic text-sage">{t('titleEm')}</em>
         </h2>
         <p className="text-[14px] sm:text-[15px] text-ink-soft font-light mb-8 sm:mb-12 leading-[1.7] px-1">
-          服务全美执业医师 · 高效、专业、稳定
+          {t('sub')}
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center flex-wrap max-w-md sm:max-w-none mx-auto">
           <a
             href={PROFESSIONAL_PORTAL_URL}
             className="inline-flex items-center justify-center gap-2 bg-sage text-white text-[14px] sm:text-[15px] font-medium px-8 sm:px-9 py-3.5 sm:py-4 rounded-full no-underline transition-all duration-200 hover:bg-sage-light hover:translate-x-0.5"
           >
-            进入商城 <ArrowIcon />
+            {t('ctaShop')} <ArrowIcon />
           </a>
           <a
             href={PROFESSIONAL_PORTAL_URL}
             className="inline-flex items-center justify-center gap-2 bg-transparent text-sage text-[14px] sm:text-[15px] font-medium px-8 sm:px-9 py-3.5 sm:py-4 rounded-full border-[1.5px] border-sage no-underline transition-all duration-200 hover:bg-sage hover:text-white"
           >
-            开始定制 <ArrowIcon />
+            {t('ctaCustom')} <ArrowIcon />
           </a>
         </div>
 
         <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-2">
-          <p className="text-[12px] sm:text-[13px] text-ink-soft font-light m-0 text-center">官方微信 · 扫码咨询合作</p>
-          <WeChatQR size={96} className="rounded-lg ring-1 ring-sage/25 shadow-sm" />
+          <p className="text-[12px] sm:text-[13px] text-ink-soft font-light m-0 text-center">{t('wechatNote')}</p>
+          <WeChatQR size={96} className="rounded-lg ring-1 ring-sage/25 shadow-sm" alt={tFooter('wechatQrAlt')} />
         </div>
       </div>
     </section>
