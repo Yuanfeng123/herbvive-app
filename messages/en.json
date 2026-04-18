@@ -210,50 +210,28 @@
     "body": "†These statements have not been evaluated by the U.S. Food and Drug Administration (FDA). Products are not intended to diagnose, treat, cure, or prevent any disease. Information on www.herbvive.co is for general reference only and is not a substitute for professional medical advice. Herbvive reserves all rights to its content. Reproduction in whole or in part is prohibited without permission and clear attribution to Herbvive."
   },
   "TickerBar": {
-    "stockMobile": "Stock",
-    "stockDesktop": "LIVE · Inventory",
+    "queueMobile": "Live",
+    "queueDesktop": "LIVE · Queue & inventory",
+    "lineDispensingPrefix": "Now dispensing: ",
+    "lineDispensingSuffix": " orders",
+    "lineQueuePrefix": "Queued: ",
+    "lineQueueSuffix": " orders",
+    "lineTodayRxPrefix": "Prescriptions opened today: ",
+    "lineTodayRxSuffix": "",
+    "lineAvgTimePrefix": "Avg. dispensing time: ",
+    "lineAvgTimeSuffix": " min",
     "inStock": "In stock",
     "items": [
-      {
-        "name": "Astragalus (Huangqi)",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Atractylodes (Baizhu)",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Angelica (Danggui)",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Ginseng (Renshen)",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Goji Berry",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Salvia (Danshen)",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Poria (Fuling)",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Licorice (Gancao)",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Ligusticum (Chuanxiong)",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "Schisandra (Wuweizi)",
-        "tag": "✓ GMP"
-      }
+      { "name": "Astragalus (Huangqi)", "tag": "✓ GMP" },
+      { "name": "Atractylodes (Baizhu)", "tag": "✓ GMP" },
+      { "name": "Angelica (Danggui)", "tag": "✓ GMP" },
+      { "name": "Ginseng (Renshen)", "tag": "✓ GMP" },
+      { "name": "Goji Berry", "tag": "✓ GMP" },
+      { "name": "Salvia (Danshen)", "tag": "✓ GMP" },
+      { "name": "Poria (Fuling)", "tag": "✓ GMP" },
+      { "name": "Licorice (Gancao)", "tag": "✓ GMP" },
+      { "name": "Ligusticum (Chuanxiong)", "tag": "✓ GMP" },
+      { "name": "Schisandra (Wuweizi)", "tag": "✓ GMP" }
     ]
   },
   "Products": {

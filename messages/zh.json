@@ -210,50 +210,28 @@
     "body": "†本声明未经美国食品药品监督管理局（FDA）评估。本平台所涉及产品无意用于诊断、治疗、治愈或预防任何疾病。www.herbvive.co 网站上的信息仅供参考，不能替代专业医疗建议。Herbvive 保留所有内容的版权。未经许可及明确标注 Herbvive 来源，禁止全部或部分转载。"
   },
   "TickerBar": {
-    "stockMobile": "库存",
-    "stockDesktop": "LIVE · 库存状态",
+    "queueMobile": "实况",
+    "queueDesktop": "LIVE · 调配与库存",
+    "lineDispensingPrefix": "当前调配中：",
+    "lineDispensingSuffix": " 单",
+    "lineQueuePrefix": "当前排队订单：",
+    "lineQueueSuffix": " 单",
+    "lineTodayRxPrefix": "今日开方数：",
+    "lineTodayRxSuffix": " 笔",
+    "lineAvgTimePrefix": "平均调配时间：",
+    "lineAvgTimeSuffix": " 分钟",
     "inStock": "现货",
     "items": [
-      {
-        "name": "黄芪 Astragalus",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "白术 Atractylodes",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "当归 Angelica",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "人参 Ginseng",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "枸杞 Goji Berry",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "丹参 Salvia",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "茯苓 Poria",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "甘草 Licorice",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "川芎 Ligusticum",
-        "tag": "✓ GMP"
-      },
-      {
-        "name": "五味子 Schisandra",
-        "tag": "✓ GMP"
-      }
+      { "name": "黄芪 Astragalus", "tag": "✓ GMP" },
+      { "name": "白术 Atractylodes", "tag": "✓ GMP" },
+      { "name": "当归 Angelica", "tag": "✓ GMP" },
+      { "name": "人参 Ginseng", "tag": "✓ GMP" },
+      { "name": "枸杞 Goji Berry", "tag": "✓ GMP" },
+      { "name": "丹参 Salvia", "tag": "✓ GMP" },
+      { "name": "茯苓 Poria", "tag": "✓ GMP" },
+      { "name": "甘草 Licorice", "tag": "✓ GMP" },
+      { "name": "川芎 Ligusticum", "tag": "✓ GMP" },
+      { "name": "五味子 Schisandra", "tag": "✓ GMP" }
     ]
   },
   "Products": {
