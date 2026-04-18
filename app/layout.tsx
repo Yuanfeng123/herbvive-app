@@ -3,6 +3,9 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages, getTranslations } from 'next-intl/server'
 import './globals.css'
 
+/** Locale comes from `NEXT_LOCALE` cookie — must not cache layout as static or refresh ignores new cookie. */
+export const dynamic = 'force-dynamic'
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('Layout')
   return {

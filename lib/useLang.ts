@@ -1,7 +1,8 @@
 'use client'
 
-import {useLocale} from 'next-intl'
-import {useRouter} from 'next/navigation'
+import { startTransition, useCallback } from 'react'
+import { useLocale } from 'next-intl'
+import { useRouter } from 'next/navigation'
 
 export type SiteLang = 'zh' | 'en'
 
@@ -12,13 +13,22 @@ export function useLang() {
   const locale = (useLocale() === 'en' ? 'en' : 'zh') as SiteLang
   const router = useRouter()
 
-  const setLang = (nextLang: SiteLang) => {
-    if (nextLang === locale) return
-    document.cookie = `${LOCALE_COOKIE}=${nextLang}; path=/; max-age=${COOKIE_MAX_AGE}; samesite=lax`
-    router.refresh()
-  }
+  const setLang = useCallback(
+    (nextLang: SiteLang) => {
+      document.cookie = `${LOCALE_COOKIE}=${nextLang}; path=/; max-age=${COOKIE_MAX_AGE}; SameSite=Lax`
+      // Let the cookie commit before RSC refetch; avoids refresh seeing a stale Cookie header.
+      queueMicrotask(() => {
+        startTransition(() => {
+          router.refresh()
+        })
+      })
+    },
+    [router]
+  )
 
-  const toggle = () => setLang(locale === 'zh' ? 'en' : 'zh')
+  const toggle = useCallback(() => {
+    setLang(locale === 'zh' ? 'en' : 'zh')
+  }, [locale, setLang])
 
   return {
     lang: locale,
