@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>感谢您的询盘 · HERBVIVE</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: #f4f9f6; font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a2420; }
+    a { color: #4a7c59; }
+  </style>
+</head>
+<body style="background-color:#f4f9f6; padding: 40px 16px;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px; width:100%;">
+
+          <!-- ── HEADER ── -->
+          <tr>
+            <td style="background-color:#1a2420; border-radius:16px 16px 0 0; padding:40px 40px 36px; text-align:center;">
+              <p style="font-family:Georgia,'Times New Roman',serif; font-size:32px; font-weight:300; color:#ffffff; letter-spacing:0.08em; margin:0 0 6px;">
+                HERBVIVE
+              </p>
+              <p style="font-size:11px; color:rgba(255,255,255,0.4); letter-spacing:0.12em; text-transform:uppercase; margin:0;">
+                美国康仁堂 · American Kanrentang
+              </p>
+            </td>
+          </tr>
+
+          <!-- ── HERO BAND ── -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #4a7c59 0%, #6b9e7a 100%); padding:48px 40px; text-align:center;">
+              <!-- Check icon -->
+              <table cellpadding="0" cellspacing="0" role="presentation" style="margin:0 auto 20px;">
+                <tr>
+                  <td style="width:56px; height:56px; background-color:rgba(255,255,255,0.2); border-radius:50%; text-align:center; vertical-align:middle;">
+                    <p style="font-size:24px; margin:0; line-height:56px;">✓</p>
+                  </td>
+                </tr>
+              </table>
+              <p style="font-family:Georgia,'Times New Roman',serif; font-size:28px; font-weight:300; color:#ffffff; margin:0 0 10px; line-height:1.3;">
+                感谢您的询盘，{{name}}！
+              </p>
+              <p style="font-size:14px; color:rgba(255,255,255,0.8); margin:0; font-weight:300; line-height:1.6;">
+                我们已收到您的消息，团队将在 <strong style="color:#ffffff;">1 个工作日内</strong>与您联系。
+              </p>
+            </td>
+          </tr>
+
+          <!-- ── BODY ── -->
+          <tr>
+            <td style="background-color:#ffffff; padding:40px; border-left:1px solid #d6e8db; border-right:1px solid #d6e8db;">
+
+              <!-- Greeting -->
+              <p style="font-size:15px; color:#1a2420; line-height:1.7; margin:0 0 24px;">
+                您好，<strong>{{name}}</strong>，<br />
+                感谢您通过 HERBVIVE 官网提交询盘。以下是您的提交摘要，请确认信息无误。
+              </p>
+
+              <!-- Submission summary box -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                style="background-color:#f4f9f6; border:1px solid #d6e8db; border-radius:12px; margin-bottom:32px; overflow:hidden;">
+                <tr>
+                  <td style="background-color:#e8f2ec; padding:12px 20px; border-bottom:1px solid #d6e8db;">
+                    <p style="font-size:11px; font-weight:500; color:#4a7c59; letter-spacing:0.1em; text-transform:uppercase; margin:0;">
+                      提交摘要
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:20px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+
+                      <tr>
+                        <td style="padding:8px 0; border-bottom:1px solid #e8f2ec; width:120px; vertical-align:top;">
+                          <p style="font-size:11px; color:#3d5046; font-weight:500; letter-spacing:0.04em; margin:0; text-transform:uppercase;">姓名</p>
+                        </td>
+                        <td style="padding:8px 0; border-bottom:1px solid #e8f2ec; vertical-align:top;">
+                          <p style="font-size:13px; color:#1a2420; margin:0;">{{name}}</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="padding:8px 0; border-bottom:1px solid #e8f2ec; vertical-align:top;">
+                          <p style="font-size:11px; color:#3d5046; font-weight:500; letter-spacing:0.04em; margin:0; text-transform:uppercase;">邮箱</p>
+                        </td>
+                        <td style="padding:8px 0; border-bottom:1px solid #e8f2ec; vertical-align:top;">
+                          <p style="font-size:13px; color:#1a2420; margin:0;">{{email}}</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="padding:8px 0; border-bottom:1px solid #e8f2ec; vertical-align:top;">
+                          <p style="font-size:11px; color:#3d5046; font-weight:500; letter-spacing:0.04em; margin:0; text-transform:uppercase;">咨询类型</p>
+                        </td>
+                        <td style="padding:8px 0; border-bottom:1px solid #e8f2ec; vertical-align:top;">
+                          <p style="font-size:13px; color:#4a7c59; margin:0; font-weight:500;">{{inquiry_type}}</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="padding:8px 0; vertical-align:top;">
+                          <p style="font-size:11px; color:#3d5046; font-weight:500; letter-spacing:0.04em; margin:0; text-transform:uppercase;">留言</p>
+                        </td>
+                        <td style="padding:8px 0; vertical-align:top;">
+                          <p style="font-size:13px; color:#3d5046; margin:0; line-height:1.65; white-space:pre-line;">{{message}}</p>
+                        </td>
+                      </tr>
+
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:32px;">
+                <tr>
+                  <td style="height:1px; background-color:#e8f2ec;"></td>
+                </tr>
+              </table>
+
+              <!-- What happens next -->
+              <p style="font-family:Georgia,'Times New Roman',serif; font-size:20px; font-weight:300; color:#1a2420; margin:0 0 20px;">
+                接下来会发生什么？
+              </p>
+
+              <!-- Steps -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+
+                <tr>
+                  <td style="vertical-align:top; padding-bottom:20px; width:44px;">
+                    <table cellpadding="0" cellspacing="0" role="presentation">
+                      <tr>
+                        <td style="width:32px; height:32px; background-color:#4a7c59; border-radius:50%; text-align:center; vertical-align:middle;">
+                          <p style="font-size:13px; color:#ffffff; font-weight:500; margin:0; line-height:32px;">1</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td style="vertical-align:top; padding-bottom:20px; padding-left:4px;">
+                    <p style="font-size:14px; font-weight:500; color:#1a2420; margin:0 0 4px;">团队审阅您的询盘</p>
+                    <p style="font-size:13px; color:#3d5046; margin:0; font-weight:300; line-height:1.6;">我们的专业顾问将在 1 个工作日内处理您的请求。</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="vertical-align:top; padding-bottom:20px;">
+                    <table cellpadding="0" cellspacing="0" role="presentation">
+                      <tr>
+                        <td style="width:32px; height:32px; background-color:#4a7c59; border-radius:50%; text-align:center; vertical-align:middle;">
+                          <p style="font-size:13px; color:#ffffff; font-weight:500; margin:0; line-height:32px;">2</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td style="vertical-align:top; padding-bottom:20px; padding-left:4px;">
+                    <p style="font-size:14px; font-weight:500; color:#1a2420; margin:0 0 4px;">联系您进行沟通</p>
+                    <p style="font-size:13px; color:#3d5046; margin:0; font-weight:300; line-height:1.6;">我们将通过邮件或电话与您确认具体需求，提供专属解决方案。</p>
+                  </td>
+                </tr>
+
+              </table>
+
+              <!-- Divider -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin:32px 0;">
+                <tr>
+                  <td style="height:1px; background-color:#e8f2ec;"></td>
+                </tr>
+              </table>
+
+              <!-- Direct contact -->
+              <p style="font-size:13px; color:#3d5046; line-height:1.7; margin:0 0 20px; font-weight:300;">
+                如需紧急咨询，欢迎直接联系我们：
+              </p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td style="width:50%; padding-right:8px; vertical-align:top;">
+                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                      style="background-color:#f4f9f6; border:1px solid #d6e8db; border-radius:10px; padding:16px;">
+                      <tr>
+                        <td>
+                          <p style="font-size:11px; color:#3d5046; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; margin:0 0 6px;">📧 邮箱</p>
+                          <a href="mailto:info@herbvive.co" style="font-size:13px; color:#4a7c59; text-decoration:none; font-weight:500;">info@herbvive.co</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td style="width:50%; padding-left:8px; vertical-align:top;">
+                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                      style="background-color:#f4f9f6; border:1px solid #d6e8db; border-radius:10px; padding:16px;">
+                      <tr>
+                        <td>
+                          <p style="font-size:11px; color:#3d5046; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; margin:0 0 6px;">📞 电话</p>
+                          <a href="tel:6577810476" style="font-size:13px; color:#4a7c59; text-decoration:none; font-weight:500;">657-781-0476</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CTA button -->
+              <table cellpadding="0" cellspacing="0" role="presentation" style="margin-top:32px; width:100%;">
+                <tr>
+                  <td align="center">
+                    <a href="https://www.herbvive.co"
+                      style="display:inline-block; background-color:#4a7c59; color:#ffffff; font-size:14px; font-weight:500; padding:14px 36px; border-radius:100px; text-decoration:none; letter-spacing:0.03em;">
+                      访问 HERBVIVE 官网 →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- ── DISCLAIMER ── -->
+          <tr>
+            <td style="background-color:#f0f5f2; border:1px solid #d6e8db; border-top:none; padding:20px 40px;">
+              <p style="font-size:11px; color:#3d5046; line-height:1.7; margin:0; opacity:0.8;">
+                * 本平台所涉及产品及服务不用于诊断、治疗、治愈或预防任何疾病，也不替代专业医疗建议。所有服务旨在支持有执照的执业医师。
+              </p>
+            </td>
+          </tr>
+
+          <!-- ── FOOTER ── -->
+          <tr>
+            <td style="background-color:#1a2420; border-radius:0 0 16px 16px; padding:28px 40px; text-align:center;">
+              <p style="font-family:Georgia,'Times New Roman',serif; font-size:18px; font-weight:300; color:#ffffff; letter-spacing:0.06em; margin:0 0 8px;">
+                HERBVIVE
+              </p>
+              <p style="font-size:12px; color:rgba(255,255,255,0.4); margin:0 0 16px; line-height:1.6;">
+                1178 N Grove St Unit C, Anaheim CA 92806<br />
+                <a href="https://www.herbvive.co" style="color:#6b9e7a; text-decoration:none;">www.herbvive.co</a>
+                &nbsp;·&nbsp;
+                <a href="mailto:info@herbvive.co" style="color:#6b9e7a; text-decoration:none;">info@herbvive.co</a>
+              </p>
+              <p style="font-size:11px; color:rgba(255,255,255,0.25); margin:0;">
+                © 2025 HERBVIVE · 美国康仁堂. All rights reserved.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

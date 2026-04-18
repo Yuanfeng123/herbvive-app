@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, type FormEvent } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import RevealObserver from '@/components/RevealObserver'
@@ -54,6 +55,7 @@ const copy = {
   // Success toast
   successTitle:  ['消息已发送！', 'Message Sent!'],
   successSub:    ['我们将尽快与您联系。', 'We will get back to you shortly.'],
+  errorSend:     ['发送失败，请稍后再试或发邮件至 info@herbvive.co', 'Something went wrong. Please try again or email info@herbvive.co'],
 
   // Map section
   mapTitle:      ['我们的位置', 'Our Location'],
@@ -167,16 +169,39 @@ function InfoCards({ t }: { t: (zh: string, en: string) => string }) {
 }
 
 /* ── contact form ── */
-import { useState } from 'react'
-
 function ContactForm({ t }: { t: (zh: string, en: string) => string }) {
   const [sent, setSent] = useState(false)
   const [sending, setSending] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setError(null)
     setSending(true)
-    setTimeout(() => { setSending(false); setSent(true) }, 1200)
+    const form = e.currentTarget
+    const fd = new FormData(form)
+    const inquiry = fd.get('inquiry_type')
+    const body = {
+      name: String(fd.get('name') ?? '').trim(),
+      email: String(fd.get('email') ?? '').trim(),
+      phone: String(fd.get('phone') ?? '').trim(),
+      clinic: String(fd.get('clinic') ?? '').trim(),
+      inquiry_type: typeof inquiry === 'string' ? inquiry : '',
+      message: String(fd.get('message') ?? '').trim(),
+    }
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      })
+      if (!res.ok) throw new Error('send_failed')
+      setSent(true)
+    } catch {
+      setError(t(...copy.errorSend as [string, string]))
+    } finally {
+      setSending(false)
+    }
   }
 
   const inputCls = "w-full border border-border rounded-xl px-4 py-3 text-[14px] text-ink bg-white placeholder:text-ink-soft/50 outline-none focus:border-sage focus:ring-2 focus:ring-sage/15 transition-all duration-200"
@@ -211,29 +236,30 @@ function ContactForm({ t }: { t: (zh: string, en: string) => string }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className={labelCls}>{t(...copy.fname as [string,string])}</label>
-          <input required type="text" placeholder={t(...copy.fnamePh as [string,string])} className={inputCls} />
+          <input name="name" required type="text" placeholder={t(...copy.fnamePh as [string,string])} className={inputCls} />
         </div>
         <div>
           <label className={labelCls}>{t(...copy.femail as [string,string])}</label>
-          <input required type="email" placeholder={t(...copy.femailPh as [string,string])} className={inputCls} />
+          <input name="email" required type="email" placeholder={t(...copy.femailPh as [string,string])} className={inputCls} />
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className={labelCls}>{t(...copy.fphone as [string,string])}</label>
-          <input type="tel" placeholder={t(...copy.fphonePh as [string,string])} className={inputCls} />
+          <input name="phone" type="tel" placeholder={t(...copy.fphonePh as [string,string])} className={inputCls} />
         </div>
         <div>
           <label className={labelCls}>{t(...copy.fclinic as [string,string])}</label>
-          <input type="text" placeholder={t(...copy.fclinicPh as [string,string])} className={inputCls} />
+          <input name="clinic" type="text" placeholder={t(...copy.fclinicPh as [string,string])} className={inputCls} />
         </div>
       </div>
       <div>
         <label className={labelCls}>{t(...copy.ftype as [string,string])}</label>
         <div className="flex flex-wrap gap-2">
-          {(types as string[]).map((type) => (
+          {(types as string[]).map((type, i) => (
             <label key={type} className="flex items-center gap-2 cursor-pointer">
-              <input type="radio" name="inquiry_type" value={type}
+              <input type="radio" name="inquiry_type" value={type} required
+                defaultChecked={i === 0}
                 className="accent-sage w-4 h-4" />
               <span className="text-[13px] text-ink-soft">{type}</span>
             </label>
@@ -242,9 +268,12 @@ function ContactForm({ t }: { t: (zh: string, en: string) => string }) {
       </div>
       <div>
         <label className={labelCls}>{t(...copy.fmsg as [string,string])}</label>
-        <textarea required rows={5} placeholder={t(...copy.fmsgPh as [string,string])}
+        <textarea name="message" required rows={5} placeholder={t(...copy.fmsgPh as [string,string])}
           className={`${inputCls} resize-none`} />
       </div>
+      {error ? (
+        <p className="text-[13px] text-red-600/90 font-light" role="alert">{error}</p>
+      ) : null}
       <button
         type="submit"
         disabled={sending}
