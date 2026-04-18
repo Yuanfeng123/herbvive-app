@@ -42,7 +42,7 @@ export default function Products() {
 
             <div className="grid grid-cols-2 gap-4 mt-10">
               {[
-                { val: '50+', label: '产品 SKU' },
+                { val: '50+', label: '诊所精选 · 常备品类' },
                 { val: 'GMP', label: '认证生产' },
               ].map((stat) => (
                 <div key={stat.label} className="p-4 bg-mist rounded-xl border border-border">

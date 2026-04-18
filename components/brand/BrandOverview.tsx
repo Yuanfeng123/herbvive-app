@@ -35,14 +35,14 @@ export default function BrandOverview() {
               About Us · 关于我们
             </p>
             <h2 className="font-serif text-[clamp(30px,4vw,48px)] font-light text-ink mb-6 leading-[1.2]">
-              北京康仁堂药业
+              康仁堂药业
             </h2>
 
             <p className="text-[14px] text-ink-soft leading-[1.85] font-light mb-4">
-              北京康仁堂药业，依托国家级科研体系，推动中药标准化与现代化。
+              康仁堂药业，依托国家级科研体系，推动中药标准化与现代化。
             </p>
             <p className="text-[14px] text-ink-soft leading-[1.85] font-light mb-4">
-              康仁堂（北京康仁堂药业）专注中药配方颗粒研发与生产20余年，是国内最早的配方颗粒试点企业之一，致力于中药标准化、智能化发展。
+              康仁堂（康仁堂药业）专注中药配方颗粒研发与生产20余年，是国内最早的配方颗粒试点企业之一，致力于中药标准化、智能化发展。
             </p>
             <p className="text-[14px] text-ink-soft leading-[1.85] font-light mb-4">
               公司拥有多项核心技术与知识产权，建立了完善的质量控制体系及现代化生产体系，推动中药由传统煎煮向标准化制剂转型。

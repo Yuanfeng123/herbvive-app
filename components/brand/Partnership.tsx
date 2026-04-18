@@ -10,7 +10,7 @@ const partners = [
   },
   {
     title: 'Herbvive康仁堂',
-    desc: '华药堂智能系统智能化下单、自动配药、物流追踪，助力诊所高效运营。当日调配，次日到达，全流程线上管理。',
+    desc: '康仁堂智能系统智能化下单、自动配药、物流追踪，助力诊所高效运营。当日调配，次日到达，全流程线上管理。',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="1.8" className="w-[22px] h-[22px]">
         <path d="M13 10V3L4 14h7v7l9-11h-7z" />

@@ -57,7 +57,7 @@ const equipment = [
   },
   {
     name: '立盒储运系统',
-    sub: '冷链仓储管理',
+    sub: '本地仓储管理',
     image: '/equipment-4.png',
   },
 ]

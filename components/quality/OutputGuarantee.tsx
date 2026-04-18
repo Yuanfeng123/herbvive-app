@@ -1,7 +1,7 @@
 const outputCards = [
   {
-    title: '在线质量报告',
-    desc: '每批产品附带完整质量检测报告，医师可在平台实时查阅，数据透明可追溯。',
+    title: '标准品控',
+    desc: '按规程检验与放行，批次一致、品质稳定，临床使用更可预期。',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="1.8" className="w-6 h-6">
         <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -9,8 +9,8 @@ const outputCards = [
     ),
   },
   {
-    title: '在线库存系统',
-    desc: '实时库存查询，自动补货预警，诊所可随时掌握库存状态，避免断货影响临床。',
+    title: '在线商城系统',
+    desc: '支持在线选购与实时库存查看，下单流程清晰便捷，发货与履约稳定高效。',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="1.8" className="w-6 h-6">
         <rect x="2" y="3" width="20" height="14" rx="2" />

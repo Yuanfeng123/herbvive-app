@@ -55,7 +55,7 @@ export default function ContactCard() {
               扫码添加销售经理微信
             </h3>
             <p className="text-[14px] text-ink-soft font-light leading-[1.7]">
-              免费领取华药堂定制保温杯<br />了解更多合作模式与产品详情
+              了解更多合作模式与产品详情
             </p>
             <div className="mt-6">
               <a

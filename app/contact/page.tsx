@@ -89,7 +89,7 @@ const copy = {
     [
       ['产品是否通过 GMP 认证？', 'Are your products GMP certified?'],
       [
-        '是的。所有产品均来自 GMP 认证工厂，依托北京康仁堂药业完整质控体系。',
+        '是的。所有产品均来自 GMP 认证工厂，依托康仁堂药业完整质控体系。',
         'Yes. All products are sourced from GMP-certified facilities backed by Beijing Kanrentang\'s quality system.',
       ],
     ],
