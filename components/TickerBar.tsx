@@ -99,16 +99,7 @@ export default function TickerBar() {
       <div className="flex-1 min-w-0 overflow-hidden text-white">
         <div className="flex whitespace-nowrap animate-ticker ticker-track text-white">
           {allCells.map((cell, i) =>
-            'kind' in cell && cell.kind === 'stock' ? (
-              <div
-                key={i}
-                className="inline-flex items-center gap-2 sm:gap-2.5 px-4 sm:px-7 text-[10px] sm:text-[11px] font-mono border-r border-white/10"
-              >
-                <span className="text-white/95">{cell.item.name}</span>
-                <span className="text-sage-light font-medium">{t('inStock')}</span>
-                <span className="text-[#6fcf97] text-[10px]">{cell.item.tag}</span>
-              </div>
-            ) : (
+            'prefixKey' in cell ? (
               <div
                 key={i}
                 className="inline-flex items-center px-4 sm:px-7 text-[10px] sm:text-[11px] font-mono border-r border-white/10"
@@ -118,6 +109,15 @@ export default function TickerBar() {
                 {t(cell.suffixKey) ? (
                   <span className={metricAccentClass}>{t(cell.suffixKey)}</span>
                 ) : null}
+              </div>
+            ) : (
+              <div
+                key={i}
+                className="inline-flex items-center gap-2 sm:gap-2.5 px-4 sm:px-7 text-[10px] sm:text-[11px] font-mono border-r border-white/10"
+              >
+                <span className="text-white/95">{cell.item.name}</span>
+                <span className="text-sage-light font-medium">{t('inStock')}</span>
+                <span className="text-[#6fcf97] text-[10px]">{cell.item.tag}</span>
               </div>
             ),
           )}
