@@ -25,7 +25,7 @@ export default async function InnovationHero() {
         </span>
 
         <h1 className="font-serif text-[clamp(36px,5vw,64px)] font-light leading-[1.15] text-ink mb-4">
-          {t('titleLine1')}
+          {t('titleLine1')}<br />
           <em className="not-italic text-sage">{t('titleEm')}</em>
           {t('titleLine2')}
         </h1>

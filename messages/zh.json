@@ -240,7 +240,8 @@
     "body": "严选高端草本配方，标准化生产工艺，每一瓶均经过严格质量检测。标签清晰、成分透明，适合直接为患者推荐使用。",
     "ctaShop": "进入商城",
     "ctaCatalog": "查看产品目录",
-    "stat1Label": "诊所精选 · 常备品类",
+    "stat1Val": "诊所精选",
+    "stat1Label": "常备品类",
     "stat2Label": "认证生产",
     "imageAlt": "HERBVIVE 产品瓶装展示"
   },
@@ -295,7 +296,7 @@
   },
   "HomeVideos": {
     "eyebrow": "Product Demo · 功能演示",
-    "heading": "平台核心功能视频",
+    "heading": "核心功能",
     "items": [
       {
         "title": "智能配方系统",
@@ -316,7 +317,7 @@
   },
   "Process": {
     "eyebrow": "How It Works · 服务流程",
-    "heading": "简单四步，完成定制",
+    "heading": "4 步轻松完成",
     "steps": [
       {
         "num": "01",
@@ -409,7 +410,7 @@
   },
   "Partnership": {
     "eyebrow": "Our Partners · 核心优势",
-    "heading": "三大核心价值",
+    "heading": "三大核心支柱",
     "sub": "汇聚顶级中药资源，以技术与服务为执业医师赋能。",
     "cards": [
       {
@@ -428,7 +429,7 @@
   },
   "CooperationModes": {
     "eyebrow": "Cooperation · 合作模式",
-    "heading": "灵活多元的合作方式",
+    "heading": "合作模式",
     "modes": [
       {
         "num": "01",
@@ -517,7 +518,7 @@
   },
   "CompareTable": {
     "eyebrow": "Comparison · 技术对比",
-    "heading": "康仁堂工艺优势对比",
+    "heading": "康仁堂干法制粒优势",
     "sub": "从制备方式到临床应用，全方位对比两种主流制剂形式的优劣。",
     "colLabel": "对比项目",
     "colA": "干法制粒（康仁堂）",
@@ -601,7 +602,7 @@
   "ClinicalData": {
     "eyebrow": "Clinical Evidence · 产品验证",
     "statNumber": "122",
-    "statUnit": "项",
+    "statUnit": "",
     "statLabel": "临床观察",
     "statSub": "覆盖 20,000+ 病例，多中心、多病种系统性临床研究",
     "cards": [
@@ -624,9 +625,9 @@
   },
   "InnovationCTA": {
     "eyebrow": "Get Started · 立即开始",
-    "titleLine1": "以创新技术",
-    "titleLine2": "提升",
-    "titleEm": "临床疗效",
+    "titleLine1": "以创新技术提升",
+    "titleLine2": "",
+    "titleEm": "临床实践",
     "sub": "服务全美执业医师 · 高效、专业、稳定",
     "ctaShop": "进入商城",
     "ctaCustom": "开始定制"
@@ -636,14 +637,14 @@
     "crumbCurrent": "质量保证",
     "eyebrow": "Quality Assurance · 质量体系",
     "titleLine1": "国家项目支持",
-    "titleEm": "科研引领",
-    "titleLine2": "中药现代化",
+    "titleLine2": "科研引领",
+    "titleEm": "中药现代化",
     "sub": "以科技创新推动中药标准化，以严格质控保障用药安全。每一瓶产品都经过严格的质量管控流程。"
   },
   "QualitySystem": {
     "eyebrow": "Quality System · 科研与检测体系",
-    "headingLine1": "三重核心",
-    "headingLine2": "质量保障",
+    "headingLine1": "品质贯穿每一步",
+    "headingLine2": "",
     "sub": "从原料采购到成品出库，每一个环节均有严格的科学标准把控，确保产品的安全性与有效性。",
     "ctaInnovation": "了解产品创新",
     "certHeading": "认证资质 · Certifications",
@@ -721,7 +722,7 @@
   },
   "Science": {
     "eyebrow": "Science · 科技成果",
-    "heading": "科研能力展示",
+    "heading": "科研与检测",
     "sub": "以前沿科技为依托，建立中药现代化研究与检测的完整体系。",
     "cards": [
       {
@@ -740,7 +741,7 @@
   },
   "OutputGuarantee": {
     "eyebrow": "Output · 结果输出保证",
-    "heading": "三重输出保障",
+    "heading": "可靠履约保障",
     "cards": [
       {
         "title": "标准品控",
@@ -758,9 +759,9 @@
   },
   "QualityCTA": {
     "eyebrow": "Get Started · 立即开始",
-    "titleLine1": "以科研实力",
-    "titleLine2": "保障每一份",
-    "titleEm": "处方安全",
+    "titleLine1": "科研背书品质",
+    "titleLine2": "融入每一份",
+    "titleEm": "配方",
     "sub": "服务全美执业医师 · 高效、专业、稳定",
     "ctaShop": "进入商城",
     "ctaInnovation": "产品创新"

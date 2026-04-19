@@ -64,7 +64,11 @@ export default async function TechInnovation() {
               {t('eyebrow')}
             </p>
             <h2 className="font-serif text-[clamp(30px,4vw,48px)] font-light text-ink mb-6 leading-[1.2]">
-              {t('heading')}<br />{t('headingBreak')}
+              {t('heading')}
+              <br />
+              <span className="text-sage text-[clamp(18px,2.4vw,30px)] font-light">
+                {t('headingBreak')}
+              </span>
             </h2>
 
             <div className="inline-flex items-center gap-2 bg-sage text-white text-[12px] font-medium px-[18px] py-2 rounded-full mb-6">

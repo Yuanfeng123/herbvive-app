@@ -12,7 +12,7 @@ function ArrowIcon({ size = 14 }: { size?: number }) {
 export default async function Products() {
   const t = await getTranslations('Products')
   const stats = [
-    { val: '50+', label: t('stat1Label') },
+    { val: t('stat1Val'), label: t('stat1Label') },
     { val: 'GMP', label: t('stat2Label') },
   ]
 

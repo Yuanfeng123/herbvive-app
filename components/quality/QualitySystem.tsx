@@ -25,8 +25,13 @@ export default async function QualitySystem() {
               {t('eyebrow')}
             </p>
             <h2 className="font-serif text-[clamp(30px,4vw,48px)] font-light text-ink mb-4 leading-[1.2]">
-              {t('headingLine1')}<br />
-              {t('headingLine2')}
+              {t('headingLine1')}
+              {t('headingLine2') ? (
+                <>
+                  <br />
+                  {t('headingLine2')}
+                </>
+              ) : null}
             </h2>
             <p className="text-[15px] text-ink-soft font-light leading-[1.75] max-w-[480px]">
               {t('sub')}

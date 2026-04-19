@@ -16,9 +16,11 @@ export default async function ClinicalData() {
             style={{ fontSize: 'clamp(80px, 14vw, 140px)', fontWeight: 300 }}
           >
             {t('statNumber')}
-            <span className="text-sage-light" style={{ fontSize: 'clamp(28px,4vw,40px)' }}>
-              {t('statUnit')}
-            </span>
+            {t('statUnit') ? (
+              <span className="text-sage-light" style={{ fontSize: 'clamp(28px,4vw,40px)' }}>
+                {t('statUnit')}
+              </span>
+            ) : null}
           </div>
           <div className="text-[18px] text-ink-soft font-light">{t('statLabel')}</div>
           <div className="text-[13px] text-ink-soft mt-1.5">{t('statSub')}</div>

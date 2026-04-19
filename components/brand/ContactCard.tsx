@@ -40,7 +40,9 @@ export default async function ContactCard() {
             <h3 className="font-serif text-[30px] sm:text-[36px] font-light text-ink mb-3 leading-[1.25]">
               {t('titleLine1')}
               <br />
-              {t('titleLine2')}
+              <span className="text-[22px] sm:text-[26px] text-ink-soft font-light">
+                {t('titleLine2')}
+              </span>
             </h3>
             <p className="text-[14px] text-ink-soft font-light leading-[1.7]">
               {t('body')}

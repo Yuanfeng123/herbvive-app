@@ -240,7 +240,8 @@
     "body": "Premium herbal formulations with standardized manufacturing. Every bottle is quality-tested with clear labeling and transparent ingredients—ready to recommend to patients.",
     "ctaShop": "Enter Store",
     "ctaCatalog": "View Catalog",
-    "stat1Label": "Clinic picks · Core assortment",
+    "stat1Val": "Clinic picks",
+    "stat1Label": "Core assortment",
     "stat2Label": "Certified production",
     "imageAlt": "HERBVIVE bottled product showcase"
   },
@@ -295,7 +296,7 @@
   },
   "HomeVideos": {
     "eyebrow": "Product Demo · Highlights",
-    "heading": "Core platform walkthroughs",
+    "heading": "Core Features",
     "items": [
       {
         "title": "Smart formula workspace",
@@ -316,7 +317,7 @@
   },
   "Process": {
     "eyebrow": "How It Works · Workflow",
-    "heading": "Four simple steps",
+    "heading": "4 Simple Steps",
     "steps": [
       {
         "num": "01",
@@ -409,11 +410,11 @@
   },
   "Partnership": {
     "eyebrow": "Our strengths",
-    "heading": "Three core pillars",
+    "heading": "Three Core Pillars",
     "sub": "Top-tier herbal resources, technology, and services for licensed practitioners.",
     "cards": [
       {
-        "title": "Quality assurance",
+        "title": "Quality Assurance",
         "desc": "Backed by Kangrentang R&D and rigorous QC—from GMP production to full traceability."
       },
       {
@@ -421,14 +422,14 @@
         "desc": "Smart ordering, automated dispensing, and logistics tracking—same-day prep and next-day delivery with end-to-end online management."
       },
       {
-        "title": "Win-win partnership",
+        "title": "Win-Win Partnership",
         "desc": "Improve clinic efficiency and revenue with flexible models that support long-term practice growth."
       }
     ]
   },
   "CooperationModes": {
     "eyebrow": "Cooperation models",
-    "heading": "Flexible ways to work together",
+    "heading": "Cooperation Models",
     "modes": [
       {
         "num": "01",
@@ -495,16 +496,16 @@
     "eyebrow": "Product Innovation",
     "titleLine1": "Innovation That ",
     "titleEm": "Modernizes",
-    "titleLine2": " Herbal Medicine with Science",
+    "titleLine2": " TCM with Science",
     "sub": "From technology to production, every step is grounded in evidence and engineering."
   },
   "TechInnovation": {
     "eyebrow": "Technology",
     "heading": "“Full-spectrum” extraction",
-    "headingBreak": "Industry-leading approach",
+    "headingBreak": "Industry-Leading Approach",
     "coreTitle": "Core patented technology",
     "coreBody": "Transfers the full composition of traditional decoctions into granules—beyond partial extracts—with >98% transfer rates to preserve clinical efficacy.",
-    "quoteTitle": "Single-decoction ≈ co-decoction consistency",
+    "quoteTitle": "Single-decoction ≈ Co-decoction consistency",
     "quoteBody": "Standardized full-spectrum processing helps single-herb granule combinations mirror whole-decoction profiles for more consistent clinical outcomes.",
     "linkQuality": "Quality system",
     "linkMore": "Learn more",
@@ -517,7 +518,7 @@
   },
   "CompareTable": {
     "eyebrow": "Comparison",
-    "heading": "Why Kangrentang dry granulation stands out",
+    "heading": "Kangrentang's Dry Granulation Advantage",
     "sub": "Side-by-side look at two mainstream granulation approaches—from process to clinic use.",
     "colLabel": "Topic",
     "colA": "Dry granulation (Kangrentang)",
@@ -557,8 +558,8 @@
   },
   "Production": {
     "eyebrow": "Manufacturing",
-    "headingLine1": "Digital, automated",
-    "headingLine2": "production",
+    "headingLine1": "Digital, Automated",
+    "headingLine2": "Production",
     "sub": "Parameterized, automated processing for digital, intelligent, scalable herbal manufacturing.",
     "equipmentCaption": "Modern equipment highlights",
     "processSteps": [
@@ -601,7 +602,7 @@
   "ClinicalData": {
     "eyebrow": "Clinical evidence",
     "statNumber": "122",
-    "statUnit": "items",
+    "statUnit": "",
     "statLabel": "Clinical observations",
     "statSub": "20,000+ cases across multi-center, multi-disease studies",
     "cards": [
@@ -624,9 +625,9 @@
   },
   "InnovationCTA": {
     "eyebrow": "Get Started",
-    "titleLine1": "Innovation that elevates",
+    "titleLine1": "Innovation That Elevates",
     "titleLine2": "",
-    "titleEm": "clinical outcomes",
+    "titleEm": "Clinical Practice",
     "sub": "Serving licensed practitioners nationwide · Efficient, professional, dependable",
     "ctaShop": "Enter store",
     "ctaCustom": "Start customizing"
@@ -636,14 +637,14 @@
     "crumbCurrent": "Quality",
     "eyebrow": "Quality assurance",
     "titleLine1": "National Programs,",
-    "titleEm": "Research-Led",
-    "titleLine2": " Modernization of Herbal Medicine",
+    "titleLine2": "Research-Led Modernization of ",
+    "titleEm": "TCM",
     "sub": "Science-driven standardization and strict controls for safer use—every bottle follows rigorous QA."
   },
   "QualitySystem": {
     "eyebrow": "Quality system",
-    "headingLine1": "Three pillars of",
-    "headingLine2": "quality assurance",
+    "headingLine1": "Quality at Every Step",
+    "headingLine2": "",
     "sub": "Scientific standards from sourcing to release—safety and efficacy at every step.",
     "ctaInnovation": "Explore product innovation",
     "certHeading": "Certifications",
@@ -690,7 +691,7 @@
   },
   "Timeline": {
     "eyebrow": "History",
-    "heading": "Research journey",
+    "heading": "Research Journey",
     "sub": "Since 2002, continuous investment in modern granule processes and quality standards—from classical processing to standardized preparations.",
     "items": [
       {
@@ -721,7 +722,7 @@
   },
   "Science": {
     "eyebrow": "Science",
-    "heading": "Research & testing capabilities",
+    "heading": "Research & Testing",
     "sub": "Modern herbal research and analytics built on advanced instrumentation.",
     "cards": [
       {
@@ -740,7 +741,7 @@
   },
   "OutputGuarantee": {
     "eyebrow": "Output assurance",
-    "heading": "Three delivery guarantees",
+    "heading": "Built for Reliable Fulfillment",
     "cards": [
       {
         "title": "Standardized QC",
@@ -758,9 +759,9 @@
   },
   "QualityCTA": {
     "eyebrow": "Get Started",
-    "titleLine1": "Research-backed",
-    "titleLine2": "safety for every",
-    "titleEm": "prescription",
+    "titleLine1": "Research-Backed Quality",
+    "titleLine2": "in Every ",
+    "titleEm": "Formula",
     "sub": "Serving licensed practitioners nationwide · Efficient, professional, dependable",
     "ctaShop": "Enter store",
     "ctaInnovation": "Product innovation"
