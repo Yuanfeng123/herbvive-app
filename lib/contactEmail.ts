@@ -94,13 +94,13 @@ function parseLocaleFromCookie(cookieHeader: string | null): ContactEmailLocale 
   return null
 }
 
-/** Prefer JSON `locale`; else `NEXT_LOCALE` cookie; default zh. */
+/** Prefer JSON `locale`; else `NEXT_LOCALE` cookie; default en. */
 export function parseContactLocale(body: unknown, cookieHeader?: string | null): ContactEmailLocale {
   if (body && typeof body === 'object') {
     const raw = (body as Record<string, unknown>).locale
     if (raw === 'en' || raw === 'zh') return raw
   }
-  return parseLocaleFromCookie(cookieHeader ?? null) ?? 'zh'
+  return parseLocaleFromCookie(cookieHeader ?? null) ?? 'en'
 }
 
 export function buildContactTemplateVars(

@@ -5,7 +5,7 @@ type AppLocale = 'zh' | 'en'
 
 function resolveLocale(): AppLocale {
   const raw = cookies().get('NEXT_LOCALE')?.value
-  return raw === 'en' ? 'en' : 'zh'
+  return raw === 'zh' ? 'zh' : 'en'
 }
 
 export default getRequestConfig(async () => {
