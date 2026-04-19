@@ -14,13 +14,13 @@ export default function Hero() {
     <section className="min-h-screen pt-[108px] flex flex-col items-center justify-center bg-sage-ultra relative overflow-hidden">
       <HeroCanvas />
 
-      <div className="relative z-10 text-center px-12 flex flex-col items-center animate-fadeUp max-w-[820px] mx-auto">
+      <div className="relative z-10 w-full max-w-[820px] mx-auto px-5 sm:px-8 md:px-12 flex flex-col items-center text-center animate-fadeUp">
 
         <span className="inline-block text-[11px] font-medium tracking-[0.12em] uppercase text-sage bg-sage-pale border border-border px-4 py-1.5 rounded-full mb-8">
           {t('badge')}
         </span>
 
-        <h1 className="font-serif text-[clamp(44px,6.5vw,80px)] font-light leading-[1.12] text-ink tracking-[-0.015em] mb-6">
+        <h1 className="font-serif text-[clamp(32px,6.5vw,80px)] font-light leading-[1.12] text-ink tracking-[-0.015em] mb-6 text-balance">
           {locale === 'zh' ? (
             <>
               {t('titleTop')}
@@ -36,18 +36,18 @@ export default function Hero() {
           )}
         </h1>
 
-        <p className="text-[16px] text-ink-soft font-light leading-relaxed mb-4 max-w-[520px]">
+        <p className="text-[16px] text-ink-soft font-light leading-relaxed mb-4 max-w-[520px] w-full">
           {t('subtitle')}
         </p>
 
-        <div className="flex items-center gap-6 mb-12 text-[12px] text-ink-soft font-light">
-          <span><strong className="text-sage font-medium">50+</strong> {t('statProducts')}</span>
-          <span className="w-px h-3 bg-border" />
-          <span><strong className="text-sage font-medium">500+</strong> {t('statHerbs')}</span>
-          <span className="w-px h-3 bg-border" />
-          <span><strong className="text-sage font-medium">$0</strong> {t('statProcessing')}</span>
-          <span className="w-px h-3 bg-border" />
-          <span><strong className="text-sage font-medium">{t('statNationwide')}</strong> {t('statDelivery')}</span>
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5 md:gap-x-6 mb-12 w-full max-w-[520px] text-[11px] sm:text-[12px] text-ink-soft font-light">
+          <span className="whitespace-nowrap"><strong className="text-sage font-medium">50+</strong> {t('statProducts')}</span>
+          <span className="hidden sm:block w-px h-3 bg-border shrink-0" aria-hidden />
+          <span className="whitespace-nowrap"><strong className="text-sage font-medium">500+</strong> {t('statHerbs')}</span>
+          <span className="hidden sm:block w-px h-3 bg-border shrink-0" aria-hidden />
+          <span className="whitespace-nowrap"><strong className="text-sage font-medium">$0</strong> {t('statProcessing')}</span>
+          <span className="hidden sm:block w-px h-3 bg-border shrink-0" aria-hidden />
+          <span className="whitespace-nowrap text-center"><strong className="text-sage font-medium">{t('statNationwide')}</strong> {t('statDelivery')}</span>
         </div>
 
         <a
@@ -67,7 +67,7 @@ export default function Hero() {
           </span>
         </a>
 
-        <p className="mt-5 text-[12px] text-ink-soft/55 font-light flex items-center gap-1.5">
+        <p className="mt-5 text-[12px] text-ink-soft/55 font-light flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 max-w-[520px] w-full px-1">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3.5 h-3.5 flex-shrink-0 text-sage">
             <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
           </svg>
