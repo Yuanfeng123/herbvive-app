@@ -1,6 +1,6 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import WeChatQR from '@/components/WeChatQR'
-import { PROFESSIONAL_PORTAL_URL } from '@/lib/professionalPortal'
+import { professionalPortalHomeUrl, type SiteLang } from '@/lib/professionalPortal'
 
 function ArrowIcon({ size = 16 }: { size?: number }) {
   return (
@@ -13,6 +13,8 @@ function ArrowIcon({ size = 16 }: { size?: number }) {
 export default async function CTA() {
   const t = await getTranslations('CTA')
   const tFooter = await getTranslations('Footer')
+  const lang = ((await getLocale()) === 'en' ? 'en' : 'zh') as SiteLang
+  const portalUrl = professionalPortalHomeUrl(lang)
 
   return (
     <section
@@ -33,13 +35,13 @@ export default async function CTA() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center flex-wrap max-w-md sm:max-w-none mx-auto">
           <a
-            href={PROFESSIONAL_PORTAL_URL}
+            href={portalUrl}
             className="inline-flex items-center justify-center gap-2 bg-sage text-white text-[14px] sm:text-[15px] font-medium px-8 sm:px-9 py-3.5 sm:py-4 rounded-full no-underline transition-all duration-200 hover:bg-sage-light hover:translate-x-0.5"
           >
             {t('ctaShop')} <ArrowIcon />
           </a>
           <a
-            href={PROFESSIONAL_PORTAL_URL}
+            href={portalUrl}
             className="inline-flex items-center justify-center gap-2 bg-transparent text-sage text-[14px] sm:text-[15px] font-medium px-8 sm:px-9 py-3.5 sm:py-4 rounded-full border-[1.5px] border-sage no-underline transition-all duration-200 hover:bg-sage hover:text-white"
           >
             {t('ctaCustom')} <ArrowIcon />

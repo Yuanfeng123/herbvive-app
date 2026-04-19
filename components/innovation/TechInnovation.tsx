@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { getTranslations } from 'next-intl/server'
-import { PROFESSIONAL_PORTAL_URL } from '@/lib/professionalPortal'
+import { getLocale, getTranslations } from 'next-intl/server'
+import { professionalPortalHomeUrl, type SiteLang } from '@/lib/professionalPortal'
 
 function SpectrumLine({
   label, sublabel, pct, highlightPct, color = '#4a7c59', bg = 'bg-mist', border = 'border-border',
@@ -54,6 +54,7 @@ function SpectrumLine({
 
 export default async function TechInnovation() {
   const t = await getTranslations('TechInnovation')
+  const lang = ((await getLocale()) === 'en' ? 'en' : 'zh') as SiteLang
 
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12">
@@ -94,7 +95,7 @@ export default async function TechInnovation() {
                 className="inline-flex items-center gap-2 bg-sage text-white text-[13px] font-medium px-[22px] py-3 rounded-full no-underline hover:bg-sage-light transition-colors duration-200">
                 {t('linkQuality')}
               </Link>
-              <a href={PROFESSIONAL_PORTAL_URL}
+              <a href={professionalPortalHomeUrl(lang)}
                 className="inline-flex items-center gap-2 bg-transparent text-sage text-[13px] font-medium px-[22px] py-3 rounded-full border-[1.5px] border-sage no-underline hover:bg-sage hover:text-white transition-all duration-200">
                 {t('linkMore')}
               </a>

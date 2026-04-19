@@ -1,5 +1,5 @@
-import { getTranslations } from 'next-intl/server'
-import { PROFESSIONAL_PORTAL_URL } from '@/lib/professionalPortal'
+import { getLocale, getTranslations } from 'next-intl/server'
+import { professionalPortalHomeUrl, type SiteLang } from '@/lib/professionalPortal'
 
 function ArrowIcon({ size = 14 }: { size?: number }) {
   return (
@@ -11,6 +11,8 @@ function ArrowIcon({ size = 14 }: { size?: number }) {
 
 export default async function Products() {
   const t = await getTranslations('Products')
+  const lang = ((await getLocale()) === 'en' ? 'en' : 'zh') as SiteLang
+  const portalUrl = professionalPortalHomeUrl(lang)
   const stats = [
     { val: t('stat1Val'), label: t('stat1Label') },
     { val: 'GMP', label: t('stat2Label') },
@@ -33,13 +35,13 @@ export default async function Products() {
 
             <div className="mt-9 flex gap-3 flex-wrap">
               <a
-                href={PROFESSIONAL_PORTAL_URL}
+                href={portalUrl}
                 className="inline-flex items-center gap-2 bg-sage text-white text-[13px] font-medium tracking-[0.03em] px-[22px] py-3 rounded-full no-underline transition-all duration-200 hover:bg-sage-light hover:translate-x-0.5"
               >
                 {t('ctaShop')} <ArrowIcon />
               </a>
               <a
-                href={PROFESSIONAL_PORTAL_URL}
+                href={portalUrl}
                 className="inline-flex items-center gap-2 bg-transparent text-sage text-[13px] font-medium tracking-[0.03em] px-[22px] py-3 rounded-full border-[1.5px] border-sage no-underline transition-all duration-200 hover:bg-sage hover:text-white"
               >
                 {t('ctaCatalog')} <ArrowIcon />

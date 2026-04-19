@@ -1,5 +1,5 @@
-import { getTranslations } from 'next-intl/server'
-import { PROFESSIONAL_PORTAL_URL } from '@/lib/professionalPortal'
+import { getLocale, getTranslations } from 'next-intl/server'
+import { professionalPortalHomeUrl, type SiteLang } from '@/lib/professionalPortal'
 
 function ArrowIcon() {
   return (
@@ -34,6 +34,7 @@ const featureIcons = [
 
 export default async function Formula() {
   const t = await getTranslations('Formula')
+  const lang = ((await getLocale()) === 'en' ? 'en' : 'zh') as SiteLang
   const features = t.raw('features') as { title: string; desc: string }[]
   const herbs = t.raw('herbs') as { name: string; amount: string }[]
 
@@ -76,7 +77,7 @@ export default async function Formula() {
             </div>
 
             <a
-              href={PROFESSIONAL_PORTAL_URL}
+              href={professionalPortalHomeUrl(lang)}
               className="inline-flex items-center gap-2 bg-sage text-white text-[14px] font-medium px-7 py-3.5 rounded-full no-underline transition-all duration-200 hover:bg-sage-light hover:translate-x-0.5"
             >
               {t('cta')} <ArrowIcon />

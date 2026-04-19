@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { useLang } from '@/lib/useLang'
-import { PROFESSIONAL_PORTAL_URL, professionalRegisterUrl } from '@/lib/professionalPortal'
+import { professionalPortalHomeUrl, professionalRegisterUrl } from '@/lib/professionalPortal'
 
 const navLinks = [
   { href: '/', key: 'home' as const },
@@ -96,7 +96,7 @@ export default function Navbar({ activePath }: NavbarProps) {
             className="hidden sm:flex items-center rounded-full bg-sage text-white text-[12px] sm:text-[13px] font-medium tracking-[0.04em] overflow-hidden divide-x divide-white/25 shadow-sm transition-all duration-200 hover:bg-sage-light"
           >
             <a
-              href={PROFESSIONAL_PORTAL_URL}
+              href={professionalPortalHomeUrl(lang)}
               className="px-4 sm:px-5 py-[10px] no-underline text-white hover:bg-white/10 transition-colors whitespace-nowrap"
             >
               {t('login')}
@@ -112,7 +112,7 @@ export default function Navbar({ activePath }: NavbarProps) {
 
         <div className="sm:hidden flex items-center rounded-full bg-sage text-white text-[11px] font-medium overflow-hidden divide-x divide-white/25">
           <a
-            href={PROFESSIONAL_PORTAL_URL}
+            href={professionalPortalHomeUrl(lang)}
             className="px-3 py-2 no-underline text-white hover:bg-white/10 whitespace-nowrap"
           >
             {t('login')}
