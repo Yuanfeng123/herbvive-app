@@ -36,11 +36,11 @@ export default function Hero() {
           )}
         </h1>
 
-        <p className="text-[16px] text-ink-soft font-light leading-relaxed mb-4 max-w-[520px] w-full">
+        <p className="text-[16px] text-ink-soft font-light leading-relaxed mb-4 max-w-[520px] w-full lg:max-w-none lg:whitespace-nowrap">
           {t('subtitle')}
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5 md:gap-x-6 mb-12 w-full max-w-[520px] text-[11px] sm:text-[12px] text-ink-soft font-light">
+        <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5 md:gap-x-6 mb-12 w-full max-w-[520px] lg:max-w-none text-[11px] sm:text-[12px] text-ink-soft font-light">
           <span className="whitespace-nowrap"><strong className="text-sage font-medium">50+</strong> {t('statProducts')}</span>
           <span className="hidden sm:block w-px h-3 bg-border shrink-0" aria-hidden />
           <span className="whitespace-nowrap"><strong className="text-sage font-medium">500+</strong> {t('statHerbs')}</span>
