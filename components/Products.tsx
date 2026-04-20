@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import { professionalPortalHomeUrl, type SiteLang } from '@/lib/professionalPortal'
+import { PRODUCT_CATALOG_PDF_URL, professionalPortalHomeUrl, type SiteLang } from '@/lib/professionalPortal'
 
 function ArrowIcon({ size = 14 }: { size?: number }) {
   return (
@@ -41,7 +41,7 @@ export default async function Products() {
                 {t('ctaShop')} <ArrowIcon />
               </a>
               <a
-                href={portalUrl}
+                href={PRODUCT_CATALOG_PDF_URL}
                 className="inline-flex items-center gap-2 bg-transparent text-sage text-[13px] font-medium tracking-[0.03em] px-[22px] py-3 rounded-full border-[1.5px] border-sage no-underline transition-all duration-200 hover:bg-sage hover:text-white"
               >
                 {t('ctaCatalog')} <ArrowIcon />

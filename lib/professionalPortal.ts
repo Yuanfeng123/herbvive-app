@@ -3,6 +3,7 @@ export const PROFESSIONAL_PORTAL_URL = 'https://professional.herbvive.co'
 
 /** 中文注册页 */
 export const PROFESSIONAL_REGISTER_ZH_URL = `${PROFESSIONAL_PORTAL_URL}/zh/register`
+export const PRODUCT_CATALOG_PDF_URL = '/Herbvive%20Product%20Catalog.pdf'
 
 export type SiteLang = 'zh' | 'en'
 
