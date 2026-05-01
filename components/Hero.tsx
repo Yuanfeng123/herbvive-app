@@ -41,7 +41,7 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5 md:gap-x-6 mb-12 w-full max-w-[520px] lg:max-w-none text-[11px] sm:text-[12px] text-ink-soft font-light">
-          <span className="whitespace-nowrap"><strong className="text-sage font-medium">50+</strong> {t('statProducts')}</span>
+          <span className="whitespace-nowrap"><strong className="text-sage font-medium">300+</strong> {t('statProducts')}</span>
           <span className="hidden sm:block w-px h-3 bg-border shrink-0" aria-hidden />
           <span className="whitespace-nowrap"><strong className="text-sage font-medium">500+</strong> {t('statHerbs')}</span>
           <span className="hidden sm:block w-px h-3 bg-border shrink-0" aria-hidden />
